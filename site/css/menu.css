@@ -1,0 +1,147 @@
+
+/* @override 
+	http://localhost/dunowenhouse.ie/site/style.css */
+
+
+/* -----------------------------------------------
+ * Dunowen House Stylesheet 2014
+ * http://dunowenhouse.ie
+ * Created by Lucie Green, Bristlebird Media Works
+ * http://bristlebird.com
+ * Using tutorial from http://www.joesnellpdx.com/toggle-navigation-no-javascript/
+ * ----------------------------------------------- */
+
+/* mobile menu button */
+.menu-link {
+	color: black;
+  	text-decoration: none;
+  	text-shadow: none;
+  	background-color: ;
+	padding: .75em 0.75em 0 .75em;
+	height: 2.4em;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	z-index: 1001;
+}
+.menu-link:hover {
+  	text-decoration: none;
+  	background-color: #555555;
+}
+
+/* menu styles */
+.menu li {
+	list-style: none;
+}
+.menu li a {
+  	color: #999999;
+  	text-shadow: none;
+  	text-decoration: none;
+  	background-color: #222222;
+  	display: inline-block;
+  	height: 2em;
+  	line-height: 1em;
+  	padding: .4em;
+  	border-bottom: 1px solid #333333;
+  	width: 100%;
+  	min-width: 160px;
+	position: relative;
+}
+
+/* menu colour */
+.menu li a:hover {
+	color: #aaa;
+	background-color: #333333;	
+}
+/* menu position */
+body:not(:target) #menu {
+  	margin: 0;
+  	padding-top: 3em;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	z-index: 1000;
+}
+body:not(:target) #menu li {
+  	width: 100%;
+  	height: 0;
+  	line-height: 0;
+  	overflow: hidden;
+  	-webkit-transition: height 0.25s;
+  	-moz-transition: height 0.25s;
+  	-o-transition: height 0.25s;
+  	transition: height 0.25s;
+}
+body:not(:target) #menu li a{
+	
+}
+body:not(:target) #menu:target {
+  	z-index: 1001;
+}
+/* menu drops down */
+body:not(:target) #menu:target li {
+  	height: 2em;
+  	line-height: auto;
+  	overflow: visible;
+  	-webkit-transition: height 0.25s;
+  	-moz-transition: height 0.25s;
+  	-o-transition: height 0.25s;
+  	transition: height 0.25s;
+}
+
+/* menu scrolls up */
+body:not(:target) #menu:target .back {
+  	height: 0;
+  	line-height: 0;
+}
+body:not(:target) #menu:target .back a {
+  	width: 100%;
+  	background-color: transparent;
+  	border: none;
+  	height: auto;
+  	position: absolute;
+  	top: -101em;
+  	bottom: -101em;
+  	left: 0;
+  	right: 0;
+  	text-indent: -999em;
+  	z-index: -1;
+}
+/* sub menu */
+.main-nav ul ul {
+	display: none;
+}
+.main-nav ul li:hover > ul {
+	display: block;
+}
+@media screen and (min-width: 54.9em) {
+  .menu-link {
+	display: none;
+  }
+  body:not(:target) #menu {
+	padding-top: 0;
+  }
+  body:not(:target) #menu li {
+	display: inline;
+	border: none;
+  }
+  body:not(:target) #menu li a {
+	color: #555555;
+	font-weight: bold;
+	text-shadow: inherit;
+    line-height: 1em;
+    padding: .75em;
+    height: 2em;
+    width: auto;
+    border: none;
+    background-color: transparent;
+  }
+  body:not(:target) #menu li a:hover {
+    color: black;
+  }
+  body:not(:target) #menu .back {
+    display: none;
+  }
+  
+}
