@@ -441,11 +441,13 @@ a {
 } 
 h1 {
 	background: url(../img/dunowen-logo.png) no-repeat;
-	text-indent: 9999px;
+	text-indent: -999px;
 	padding: 0;
 	margin: 15px 0 15px 55px;
 	height: 95px;
 	font-size: 1px;
+	width: 50%;
+	float: left;
 }
 h2 {
 	margin: 0;
@@ -646,7 +648,10 @@ footer p {
 
 @media (min-width:54.9em)
 /* 768px/14px = 54.9em */ {
-
+	h1 {
+		width: 16%;
+		float: left;
+	}
 	
 }
 @media (min-width:73.1em) 
