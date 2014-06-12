@@ -170,11 +170,12 @@ body:not(:target) #menu:target .back a {
 .menu li:hover ul li a {
 	padding:5px;
 	display:block;
-	width:168px;
+	width:120px;
 	text-indent:8px;
 	color: #673d5c;
 	font-weight: 600;
 	background-color: white;
+	opacity: 0.88;
 }
 .menu li:hover ul li a:hover { 
 color: #aa0061;
@@ -211,11 +212,30 @@ color: #aa0061;
 }
 @media screen and (min-width: 73.1em) {
 .main-nav {
-	width: 200px;
+	width: 180px;
+}
+ul.menu {
+	margin-top: 60px;
+}
+ul.menu li a {
+	display: block;
+
+}
+ul.menu li {
+	width: 100%;
+	border-bottom: 1px dashed #dfdede;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+ul.sub-menu li {
+	border-bottom-style: none;
+	width: 80%;
+	padding: 0;
+	margin: 0;
+}
+ul.menu li:hover ul li a {
+		text-indent:58px;
+		background-color: white;
 }
 
-.menu li a {
-	display: inline;
-	padding: 20px;
-}
 }

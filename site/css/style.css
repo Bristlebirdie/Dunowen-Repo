@@ -658,6 +658,9 @@ footer p {
 /* 1024px/14px = 73.1em */ {
 	
 	/* @group general*/ 
+	h1 {
+		width: 100%;
+	}
 	h2 {
 		padding: 0;
 		margin-left: 80px;
@@ -671,18 +674,40 @@ footer p {
 	h4 {
 		
 	}
+	h7 {
+		text-transform: capitalize;
+		font: 1.2em Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
 	/* @end*/
 	
 	/* @group header*/ 
 	header {
 		width: 19%;
 		float: left;
-		background-color: #f7f7f7;
+		height: 900px;
 	}
 	.contact {
 		display: block;
-		width: 100%;
-		clear: both;
+		padding:0;
+		margin: 500px 0 0 45px;
+		list-style-type:none;
+		height: 150px;
+		width: 78%;
+		float: left;
+		font-size: .8em;
+		color: #7a7a7a;
+	
+	}
+	.follow {
+		text-transform: capitalize;
+	}
+	.intouch {
+		text-transform: lowercase;
+		margin-top: 50px;
+	}
+	.intouch p{
+		line-height: 18px;
 	}
 	/* @end*/
 	
