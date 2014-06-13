@@ -451,44 +451,47 @@ h1 {
 }
 h2 {
 	margin: 0;
-	font-size: 2.2em;
+	font-size: 1.43em;
 	font-weight: 300;
-	padding-left: 40px;
+	padding-left: 20px;
 	padding-top: 40px;
+	color: #fefeff;
+	position: absolute;
+	top: 25px;
 }
 h2 span {
 	font-style: italic;
 }
 h3 {
 	margin: 0;
-}
-h4 {
-	margin-top: 0;
-	margin-right: 0;
-	margin-bottom: 0;
-	font-size: 38px;
+	font-size: 1.29em;
 	font-weight: 300;
-	padding-bottom: 45px;
-	padding-top: 50px;
+	padding-bottom: 35px;
+	padding-top: 30px;
 }
-h4 span {
+h3 span {
 	font-style: italic;
 }
-h5 {
-	font: 20px 'Lato', arial, sans-serif;
+h4 {
+	font: .9em 'Lato', arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	padding-top: 20px;
+}
+h5 {
+	font: 1.1em 'Lato', arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 20px;
 }
 h6 {
-	font: bold 16px Arial, Helvetica, sans-serif;
+	font: bold 1em Arial, Helvetica, sans-serif;
 	word-wrap:break-word;
 	margin-top: 30px;
 	margin-bottom: 0;
 }
+
 img {
-	padding: 5px;
 	width: 100%;
 	max-width: 100%;
 }
@@ -507,50 +510,50 @@ header {
 nav {
 	
 } 
-nav ul {
-	
-}
-nav li {
-	
-}
-nav ul li {
-	
-} 
-nav li a {
-   
-}
-nav li a:hover,
-nav li a:focus {
-}
+
 /* @end*/ 
 
 /* @group main*/ 
 .gallery {
-	background-color: #32bef1;
-	height: 300px;
-	color: #fefeff;
+	position: relative;
+	width: 100%;
+}
+.flexslider {
+	float: none;
 }
 .book {
 	background-color: #1e1a33;
 	color: #fefeff;
-	height: 100px;
-	padding-left: 40px;
+	height: 120px;
+	padding-left: 20px;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	font-weight: 300;
+	margin-top: -23px;
+}
+.book button {
+display: none;
+	/*background-color: black;
+	color: #c6c5c5;
+	font-size: .8em;
+	border-style: none;
+	width: 180px;
+	height: 30px;
+	margin-left: 80px;*/
 }
 .container {
 	color: #fefeff;
 	font: 1.1em 'Lato', arial, sans-serif;
-	background-color: #172a38;
+	background-color: #0e0b17;
 	height: ;
 	padding-bottom: 80px;
 }
 .container article {
-	margin-left: 40px;
+	margin-left: 20px;
 }
 .container img {
 	width: 35%;
+	padding: 5px;
 }
 .container p {
 	font: 14px Arial, Helvetica, sans-serif;
@@ -561,15 +564,22 @@ nav li a:focus {
 .news {
 	color: #fefeff;
 	font: .9em 'Lato', arial, sans-serif;
-	background-color: #171111;
+	background-color: #1e1a34;
 	float: right;
 	width: 100%;
-	padding-bottom: 75px;
+	padding-bottom: 50px;
+	margin-top: -3px;
 }
+.news button {
+	background: #0e0b17;
+	border-style: none;
+	color: white;
+}
+
 .col_1 {
 	width: 42%;
 	float: left;
-	margin-left: 40px;
+	margin-left: 20px;
 	word-wrap:break-word;
 }
 .col_1 img {
@@ -623,13 +633,19 @@ footer p {
 
 @media (min-width:40em)
 /* 560px/14px = 30em */ {
-	
-	.container img {
-		word-break: break-all;
-		width: 18%;
-		float: right;
-		padding-right: 30px;
-		margin-left: -10px;
+	h2 {
+		font-size: 1.71em;
+		padding-left: 40px;
+	}
+	h3 {
+		font-size: 1.57em;
+	}
+	h4 {
+		font-size: 1em;
+	}
+	.book {
+		padding-left: 40px;
+		margin-top: -25px;
 	}
 	.container p {
 		font: 14px Arial, Helvetica, sans-serif;
@@ -637,22 +653,38 @@ footer p {
 		word-wrap: break-word;
 		width: 52%;
 	}
-	.col_1 {
-		width: 280px;	
+	.container article {
+		margin-left: 40px;
 	}
-	.col_2 {
-		width: 280px;	
+	.container img {
+		width: 20%;
+		padding: 5px;
+	}
+	.col_1 {
+		width: 280px;
+		margin-left: 40px;	
 	}
 }
 
 
 @media (min-width:54.9em)
-/* 768px/14px = 54.9em */ {
+/* 768px/14px = 54.9em */
+/* top menu appears*/ {
 	h1 {
 		width: 16%;
 		float: left;
 	}
-	
+	h2 {
+		font-size: 2.4em;
+		top: 50px;
+	}
+	h4 {
+		font-size: 1em;
+	}
+	.container img {
+		width: 15%;
+		padding: 5px;
+	}
 }
 @media (min-width:73.1em) 
 /* 1024px/14px = 73.1em */ {
@@ -664,20 +696,25 @@ footer p {
 	h2 {
 		padding: 0;
 		margin-left: 80px;
-		margin-top: 225px;
-		font-size: 38px;
+		font-size: 2.71em;
+		top: 180px;
 	}
 	h3 {
-		margin-left: 80px;
-		margin-top: 20px;
+		font-size: 2.1em;
 	}
 	h4 {
-		
+		margin-left: 80px;
+		margin-top: 0;
+	}
+	h5 {
+		font-size: 1.3em;
 	}
 	h7 {
 		text-transform: capitalize;
 		font: 1.2em Arial, Helvetica, sans-serif;
 		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	/* @end*/
 	
@@ -690,14 +727,13 @@ footer p {
 	.contact {
 		display: block;
 		padding:0;
-		margin: 500px 0 0 45px;
+		margin: 40px 0 0 45px;
 		list-style-type:none;
 		height: 150px;
 		width: 78%;
-		float: left;
+		float: right;
 		font-size: .8em;
 		color: #7a7a7a;
-	
 	}
 	.follow {
 		text-transform: capitalize;
@@ -712,47 +748,51 @@ footer p {
 	/* @end*/
 	
 	/* @group main*/ 
-	
 	.gallery {
 		width: 81%;
 		float: right;
-		padding: 0;
-		height: 725px;
 	}
 	.book {
+	display: none;
+		/*float: right;
 		width: 81%;
-		float: right;
 		padding: 0;
+		margin-top: -4px;*/
 	}
 	.container {
-		width: 81%;
+		position: absolute;
+		width: 25%;
 		float: right;
 		padding: 0;
-	}
-	.container article {
-		margin-left: 80px;
+		background-color: rgba(14, 11, 23, 0.47);;
+		margin-left: 19%;
 	}
 	.container p {
-		
+		width: 90%;
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.container img {
 		display: none;
 	}
 	.news {
 		width: 81%;
-		float: right;
 		padding: 0;
 	}
+	.news h4{
+		margin-left: 0;
+		padding-left: 5px;
+	}	
 	.col_1 {
 		width: 280px;
 		margin-left: 80px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	.col_2 {
 		float: left;
 		width: 280px;
 		margin-left: 80px;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 	}
 	/* @end*/
 	
@@ -760,7 +800,7 @@ footer p {
 	footer {
 		position: absolute;
 		top: 0;
-		width: 82%;
+		width: 81.5%;
 		margin-left: 19%;
 		height: 25px;
 	}
@@ -776,5 +816,5 @@ footer p {
 	.social {
 		display: none;
 	}
-	
+
 	/* @end */
