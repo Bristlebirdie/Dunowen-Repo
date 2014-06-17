@@ -11,8 +11,9 @@
  * Using tutorial from http://www.joesnellpdx.com/toggle-navigation-no-javascript/
  * ----------------------------------------------- */
 
-/* mobile menu button */
-@media screen and (max-width: 60em){
+
+@media screen and (max-width: 60em)
+/* mobile menu button */  {
 .menu-link {
 	color: #7a7a7a;
   	text-decoration: none;
@@ -124,7 +125,8 @@ body:not(:target) #menu:target .back a {
 }
 
 @media screen and (min-width: 60em) 
-/*960/14px =68.57*/ {
+/*960/14px =68.57*/ 
+/*top menu*/{
 .menu-link {
 	display: none;
   	}
@@ -132,11 +134,11 @@ body:not(:target) #menu:target .back a {
 	display: none;
 }
 .menu {
-	padding:0;
+	padding: 0 0 0 4%;
 	margin: 74px 0 0;
 	list-style-type:none;
 	height:30px;
-	width: 78%;
+	width: 74%;
 	float: right;
 	text-transform: uppercase;
 	font-size: .8em;
@@ -151,6 +153,9 @@ body:not(:target) #menu:target .back a {
 	text-decoration:none;
   	}
 .menu li a:hover{
+	color: #aa0061;
+}
+.menu li.active a{
 	color: #aa0061;
 }
   /* Submenu */
@@ -182,36 +187,10 @@ body:not(:target) #menu:target .back a {
 color: #aa0061;
 	}
 	
-  /*body:not(:target) #menu {
-	padding-top: 0;
-  }
-  body:not(:target) #menu li {
-	display: inline;
-	border: none;
-  }
-  body:not(:target) #menu li a {
-	color: #555555;
-	font-weight: bold;
-	text-shadow: inherit;
-    line-height: 1em;
-    padding: .75em;
-    height: 2em;
-    width: auto;
-    border: none;
-    background-color: transparent;
-  }
-  body:not(:target) #menu li a:hover {
-    color: black;
-  }
-  body:not(:target) #menu .back {
-    display: none;
-  }
-  .menu {
-
-  }*/
   
 }
-@media screen and (min-width: 73.13em) {
+@media screen and (min-width: 73.1em) 
+/*menu to left side*/{
 .main-nav {
 	width: 180px;
 	margin-left: 16px;
@@ -241,5 +220,9 @@ ul.menu li:hover ul{
 ul.menu li:hover ul li a {
 	text-indent:5px;
 	background-color: white;
+}
+.contact {
+	padding-left: 60px;
+	margin-top: 40px;
 }
 }
