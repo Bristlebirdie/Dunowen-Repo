@@ -18,21 +18,21 @@
 	color: #7a7a7a;
   	text-decoration: none;
   	text-shadow: none;
-  	background-color: ;
 	padding: .75em 0.75em 0 .75em;
-	height: 2.4em;
+	height: 3em;
   	position: absolute;
   	right: 0;
   	top: 0;
   	z-index: 1001;
 	text-transform: uppercase;
 	word-spacing: 2px;
+	font-size: 1.2em;
 }
 .menu-link:hover {
   	text-decoration: none;
-  	color: black;
+  	color: #aa0061;
 	}
-	
+
 /* menu styles */
 .menu {
 	padding: 0 10px 0 0;
