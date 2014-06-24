@@ -516,9 +516,36 @@ nav {
 	
 }
 /* @end*/ 
-
+/* @group button*/ 
+button {
+    width: 115px;
+    height: 25px;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	border-bottom-style: none;
+	border-style: none;
+	background-color: #c4c3c3;
+}
+button:after {
+    content: '\A';
+    position: absolute;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 12px solid #c4c3c3;
+	top: 0;
+}
+button a{
+	text-decoration: none;
+	color: #161326;
+}
+/* @end*/
 /* @group main content*/ 
 .wrapper {
+
 }
 .inner_wrap {
 	min-height: 100%;
@@ -546,19 +573,22 @@ nav {
 	font-weight: 300;
 	word-spacing: 3px;
 }
-.gallery {
-	width: 100%;
+.gallery img{
+	margin-bottom: -3px;
 }
 .flexslider {
 	float: none;
 }
+.main {
+
+}
 .container {
 	color: #fefeff;
 	font: 1.1em;
-	background-color: #0e0b17;
 	padding-bottom: 40px;
 	margin-top: -3px;
-	padding-left: 25px;
+	padding-left: 40px;
+	background-color: #0e0b17;
 }
 .container article {
 	margin-left: 20px;
@@ -567,7 +597,7 @@ nav {
 	margin-right: 40px;
 	margin-top: 2px;
 }
-.container img {
+.container-pic img {
 	width: 35%;
 	float: right;
 	margin: 5px 20px 15px 15px;
@@ -581,13 +611,18 @@ nav {
 	font-size: 1.1em;
 	line-height: 20px;
 }
+.container p a{
+	text-decoration: none;
+	color: #aa0061;
+}
+
+/* @group news*/ 
 .news {
 	color: #fefeff;
 	background-color: #1e1a34;
 	float: right;
 	width: 100%;
 	padding-bottom: 60px;
-	margin-top: -3px;
 	border-top: 1px dashed #494747;
 	height: auto;
 }
@@ -603,7 +638,7 @@ nav {
 }
 .news button {
 	margin-right: 10px;
-	font-size: .9em;
+	font-size: .9em;	
 }
 .col_1 {
 	min-width: 30%;
@@ -623,6 +658,12 @@ nav {
 	word-wrap:break-word;
 	margin-left: 20px;
 }
+.col_1 h4{
+	margin-left: 0;
+}
+.col_2 h4{
+	margin-left: 0;
+}
 .col_3 h5 {
 	margin-top: 60px;
 	margin-left: 100px;
@@ -632,12 +673,123 @@ nav {
 	margin-left: 100px;
 }
 /* @end*/
+/* @group Contact form*/
+form {
+	width: 70%;
+	margin-left: 40px;
+	padding-right: 2px;
+	height: 100%;
+}
+#form1_message {
+	margin-top: 1em;
+}
+input {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+label {
+    display: inline-block;
+    width: 70%;
+    white-space: nowrap;    
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 4px 10px;
+    border: solid 1px #c4c3c3;
+    outline: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+input[type="text"], input[type="email"], {
+    height: 2em;
+}
+input[type="checkbox"], input[type="date"], input[type="number"], {
+    height: 2em;
+    border-radius: 5px;
+}
+textarea {
+    height: 10em;;
+}
+#form1_checkin {
+	display: inline-block;
+}
+/* @end*/
+/* @group map*/
+.mappanel {
+	width: 80%;
+	background-color: #b2b3b5;
+	border-radius: 5px;
+	margin-right: 2%;
+	margin-top: 30px;
+	clear: both;
+	margin-left: 20px;
+}
+.map img {
+	float: none;
+	clear: both;
+	width: 80%;
+	margin: 5% 5% 5% 8%;
+	padding: 0;
+	border: 10px solid #fff;
+	border-radius: 5px;
+}
+.map h4 {
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+.vcard li{
+	list-style: none;
+	padding: 4px;
+}
+.vcard li a {
+	text-decoration: none;
+	color: #aa0061;
+}
+/* @end*/
 
+/* @group offers*/ 
+.offers-container {
+	color: #fefeff;
+	font: 1.1em;
+	background-color: #161326;
+	margin-top: -3px;
+	float: right;
+	overflow: scroll;
+	height: 520px;
+	padding-bottom: 40px;
+}
+.offers-container img {
+	width: 35%;
+	float: right;
+	margin: 5px 20px 15px 15px;
+}
+.offers-container h2{
+	position: relative;
+	top: 40px;
+}
+article {
+	height: 350px;
+	margin-top: 80px;
+
+}
+.offers-pic {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.offers-intro {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.offers-intro p span {
+	display: none;
+}
+
+/* @end*/
 /* @group BLOG*/ 
 .blog-container {
 	color: #fefeff;
 	font: 1.1em;
-	background-color: #0e0b17;
+	background-color: #161326;
 	margin-top: -3px;
 	float: right;
 	overflow: scroll;
@@ -652,6 +804,7 @@ nav {
 article {
 	height: 350px;
 	margin-top: 80px;
+
 }
 .blog-pic {
 	margin-left: 10%;
@@ -682,6 +835,8 @@ article {
 
 /* @end*/
 
+/* @end STYLES*/
+
 /*@group footer*/
  
 footer{
@@ -689,7 +844,6 @@ footer{
 	font-size: .9em;
 	background-color: #0e0b16;
 	width: auto;
-	height: 70px;
 	clear: both;
 	bottom: 0;
 	position: relative;
@@ -704,6 +858,7 @@ footer p {
 .address {
 	width: 270px;
 	word-spacing: 2px;
+	padding-top: 15px;
 }
 .address a{
 	text-decoration: none;
@@ -712,11 +867,39 @@ footer p {
 .address a:hover{
 	color: #6558a9;
 }
+.social {
+	background: url(../img/icons.png) -10px no-repeat;
+	width: 160px;
+	height: 45px;
+	margin-right: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.social a.facebook {
+	width: 45px;
+	height: 40px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+.social a.twitter {
+	width: 45px;
+	height: 40px;
+	display: inline-block;
+	margin-left: 6px;
+	text-indent: -9999px;
+}
+.social a.tripadvisor {
+	width: 45px;
+	height: 40px;
+	display: inline-block;
+	margin-left: 7px;
+	text-indent: -9999px;
+}
+
 small {
 	padding-left: 20px;
 }
 /* @end */
-/* @end STYLES*/
 
 /* @group MEDIA QUERIES */
 
@@ -734,7 +917,7 @@ small {
 	.container article {
 		margin-left: 40px;
 	}
-	.container img {
+	.container-pic img {
 		width: 30%;
 		padding: 5px;
 		margin-left: 20px;
@@ -793,6 +976,17 @@ small {
 	.col_3 button {
 		margin-left: 30%;
 	}
+	
+	.mappanel {
+		width: 70%;	
+	}
+	.address {
+		padding-top: 20px;
+	}
+	.social {
+		margin-left: 75%;
+		margin-top: -30px;
+	}
 	/* @group BLOG*/ 
 	article {
 		height: 200px;
@@ -811,7 +1005,7 @@ small {
 		margin-left: 5%;
 		
 	}
-
+	
 }
 @media (min-width:54em)
 /* 768px/14px = 54.9em */
@@ -829,27 +1023,21 @@ small {
 		font-size: 2.4em;
 		margin-left: 40px;
 	}
-	h3 {
-		margin-left: 40px;
-	}
-	h3 {
-		margin-left: 40px;
-	}
 	.second-nav p {
 		width: 78%;
 		text-align: left;
 		margin-left: 22%;
 		padding-left: 15px;
 	}
+	.container {
+		padding-left: 80px;
+	}
 	.container-pic {
 		margin-right: 80px;
 	}
-	.container img {
+	.container-pic img {
 		width: 25%;
 		padding: 5px;
-	}
-	.container p {
-		margin-left: 40px;
 	}
 	.col_1 {	
 		max-width: 20%;
@@ -865,14 +1053,27 @@ small {
 		max-width: 20%;
 		margin-left: 0;
 	}
+	.social {
+		margin-left: 80%;
+	}
 	/* @group BLOG*/ 
 	article {
 
 	}
 	.blog-pic {
-			}
+	}
 	.blog-intro {
-			}
+	}
+	form {
+		width: 40%;
+		margin-right: 5%;
+		margin-bottom: 20px;
+	}
+	.mappanel {
+		width: 40%;
+		display: inline-block;
+		margin-left: 40px;
+	}
 }
 @media (min-width:73.1em) 
 /* 1024px/14px = 73.1em */ {
@@ -889,7 +1090,6 @@ small {
 	h3 {
 		font-size: 2.1em;
 		margin-top: 0;
-		margin-left: 40px;
 	}
 	h4 {
 		font-size: 1.3em;
@@ -903,6 +1103,9 @@ small {
 		font-weight: 700;
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+	.second-nav {
+		display: none;
 	}
 	/* @end*/
 	
@@ -926,8 +1129,34 @@ small {
 		margin-left: 10px;
 	}
 	.follow {
-		text-transform: capitalize;
+		background: url(../img/icons.png) -20px no-repeat;
+		width: 160px;
+		height: 60px;
+		opacity: 0.77;
+		margin-left: -10px;
 	}
+	.follow a.facebook {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-indent: -999px;
+		margin-top: 10px;
+		margin-left: -5px;
+	}
+	.follow a.twitter {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-indent: -999px;
+		margin-left: 15px;
+	}
+	.follow a.tripadvisor {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		text-indent: -999px;
+		margin-left: 12px;
+	}	
 	.intouch {
 		text-transform: lowercase;
 		margin-top: 50px;
@@ -972,10 +1201,7 @@ small {
 		max-width: 1000px;
 	}
 	.container p {
-		margin-left: 40px;
 		margin-right: 40px;
-	}
-	.container img {
 	}
 	.news {
 		clear: both;

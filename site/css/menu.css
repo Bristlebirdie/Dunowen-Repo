@@ -177,7 +177,7 @@ body:not(:target) #menu:target .back a {
 .menu li:hover ul li a {
 	padding:5px;
 	display:block;
-	width:120px;
+	width:130px;
 	text-indent:8px;
 	color: #673d5c;
 	font-weight: 600;
@@ -185,10 +185,11 @@ body:not(:target) #menu:target .back a {
 	opacity: 0.88;
 }
 .menu li:hover ul li a:hover { 
-color: #aa0061;
+	color: #aa0061;
 	}
-	
-  
+.sub-menu li {
+ 	white-space: nowrap;
+ }
 }
 @media screen and (min-width: 73.1em) 
 /*menu to left side*/{
@@ -213,7 +214,8 @@ ul.menu li {
 ul.sub-menu li {
 	border-bottom-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 0 10px;
+	white-space: nowrap;
 }
 ul.menu li:hover ul{ 
 	position: static;
