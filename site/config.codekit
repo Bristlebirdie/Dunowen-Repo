@@ -147,6 +147,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/exterior_2x2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.42790e+06,
+		"inputAbbreviatedPath": "\/img\/exterior_2x2.jpg",
+		"outputAbbreviatedPath": "\/img\/exterior_2x2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/exterior_3x2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.93968e+06,
+		"inputAbbreviatedPath": "\/img\/exterior_3x2.jpg",
+		"outputAbbreviatedPath": "\/img\/exterior_3x2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/exterior_4x2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 798934,
+		"inputAbbreviatedPath": "\/img\/exterior_4x2.jpg",
+		"outputAbbreviatedPath": "\/img\/exterior_4x2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/exterior_x2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

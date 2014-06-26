@@ -52,7 +52,8 @@
 .flexslider .slides img {
 	width: 100%; 
 	display: block;
-	}
+	float: right;
+}
 .flex-pauseplay span {
 	text-transform: capitalize;
 	}
