@@ -48,7 +48,7 @@
   	text-transform: uppercase;
   	background-color: #fff;
   	display: inline-block;
-  	height: 2em;
+  	height: 4em;
   	line-height: 1em;
 	padding: 1.4em 0 0.6em 2em;
 	border-bottom: 1px dashed #dfdede;
@@ -123,6 +123,10 @@ body:not(:target) #menu:target .back a {
 .sub-menu {
 	display: none;
 	}
+
+/* @group Sub-menu */
+
+/* @end */
 }
 
 @media (min-width:59em)
@@ -166,10 +170,10 @@ body:not(:target) #menu:target .back a {
 	top:-9999px;
 	list-style-type:none;
    	}
-.menu li:hover { 
+/*.menu li:hover { 
 	position:relative; 
-	}
-.menu li:hover ul {
+	}*/
+/*.menu li:hover ul {
 	left:0px;
 	top:30px;
 	padding:0px;
@@ -177,8 +181,8 @@ body:not(:target) #menu:target .back a {
 .menu li:hover ul li a {
 	padding:5px;
 	display:block;
-	width:130px;
-	text-indent:8px;
+	width:145px;
+	text-indent:15px;
 	color: #673d5c;
 	font-weight: 600;
 	background-color: white;
@@ -189,7 +193,7 @@ body:not(:target) #menu:target .back a {
 	}
 .sub-menu li {
  	white-space: nowrap;
- }
+ }*/
 }
 @media screen and (min-width: 73.1em) 
 /*menu to left side*/{
