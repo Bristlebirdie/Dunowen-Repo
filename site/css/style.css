@@ -459,7 +459,7 @@ h1 {
 }
 h2 {
 	margin: 10% 0 5% 10%;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: 300;
 	color: #fefeff;
 	position: absolute;
@@ -530,6 +530,8 @@ header {
 	display: inline-block;
 	width: 100%;
 	padding: 10px 3% 10px 0;
+	float: left;
+	white-space: nowrap;
 }
 .second-nav a {
 	text-decoration: none;
@@ -565,9 +567,13 @@ button:after {
     border-left: 12px solid #c4c3c3;
 	top: 0;
 }
-button a{
+button a { 
+	display:block; 
+	height:100%; 
+	width:100%; 
 	text-decoration: none;
 	color: #161326;
+	margin-top: 2px;
 }
 /* @end*/
 /* @group main content*/ 
@@ -580,17 +586,22 @@ button a{
 	margin: 0;
 	padding: 0;
 }
+.main {
+	background-color: #161326;
+	clear: both;
+}
 .main .address {
 	display: none;
 }
-
+.gallery {
+	clear: both;
+	margin-bottom: -3px;
+}
 .container {
 	color: #fefeff;
 	font: 1.1em;
 	padding-bottom: 40px;
-	margin-top: -3px;
-	background-color: #0e0b17;
-	padding-left: 20px;
+	margin-left: 10%;
 }
 .container-pic {
 	margin-right: 40px;
@@ -616,7 +627,9 @@ button a{
 }
 article {
 	height: auto;
-	margin: 40px 15% 80px 10%;
+	margin-top: 40px;
+	margin-right: 15%;
+	margin-bottom: 80px;
 }
 /* @group rates*/ 
 ul.bandb {
@@ -663,7 +676,8 @@ tr {
 }
 .news button {
 	margin-right: 10px;
-	font-size: .9em;	
+	font-size: .9em;
+	margin-top: 15px;
 }
 .col {
 	max-width: 70%;
@@ -678,7 +692,7 @@ tr {
 /* @end*/
 /* @group Contact form*/
 form {
-	width: 70%;
+	width: 90%;
 	margin-left: ;
 	padding-right: 2px;
 	height: 100%;
@@ -784,7 +798,6 @@ textarea {
 .offers.container {
 	color: #fefeff;
 	font: 1.1em;
-	background-color: #161326;
 	padding-bottom: 100px;
 }
 .offers.container h2 {
@@ -808,12 +821,14 @@ textarea {
 .blog.container {
 	color: #fefeff;
 	font: 1.1em;
-	background-color: #161326;
 	padding-bottom: 100px;
+	margin-left: 10%;
+	padding-left: 0;
 }
 .blog.container h2 {
 	position: static;
 	margin-bottom: 0;
+	margin-left: 0;
 }
 /* @end*/
 
@@ -881,9 +896,12 @@ footer p {
 	display: inline-block;
 }
 small {
-	margin: 10px auto 0;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
 	display: table;
+	padding-bottom: 20px;
 }
 /* @end */
 
@@ -931,9 +949,6 @@ small {
 	/* ipad portrait*/
 	.mappanel {
 		width: 70%;	
-	}
-	.container{
-		padding-left: 5%;
 	}
 	.col {
 		max-width: 30%;
@@ -997,9 +1012,6 @@ small {
 	.second-nav {
 		padding-right: 10%;
 	}
-	.container {
-		padding-left: 80px;
-	}
 	.container-pic {
 		margin-right: 80px;
 	}
@@ -1030,7 +1042,7 @@ small {
 	
 	/* @group general*/ 
 	h1 {
-
+		width: 65%;
 	}
 	h2 {
 		font-size: 2.71em;
@@ -1129,8 +1141,9 @@ small {
 		color: #eeeeee;
 	}
 	.main .address p{
-		margin: -10px 0 0 40px;
+		margin: -10px 40px 4px 10%;
 		padding-bottom: 5px;
+		text-align: left;
 	}
 	.second-nav p {
 		margin-left: 15px;
@@ -1141,7 +1154,7 @@ small {
 		height: auto;
 	}*/
 	.main {
-		background-color: #161326;
+		
 		width: 81%;
 		float: right;
 		position: absolute;
