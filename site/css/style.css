@@ -447,18 +447,19 @@ a {
     
 } 
 h1 {
-	background: url(../img/dunowen-logo.png) no-repeat;
+	background: url(../img/dunowen-logo.png) 15px 4px no-repeat;
 	text-indent: -999em;
 	padding: 0;
-	margin: 15px 0 15px 25px;
-	height: 95px;
+	margin-top: 10px;
+	margin-left: 5%;
+	height: 100px;
 	font-size: 1px;
-	width: 50%;
+	width: 140px;
 	float: left;
 	overflow: hidden;
 }
 h2 {
-	margin: 10% 0 5% 10%;
+	margin: 10% 5% 5%;
 	font-size: 1.4em;
 	font-weight: 300;
 	color: #fefeff;
@@ -525,25 +526,34 @@ header {
 	color: #fffdfd;
 	font-size: .8em;
 	text-transform: uppercase;
-	text-align: right;
 	background-color: #aa0061;
-	display: inline-block;
 	width: 100%;
-	padding: 10px 3% 10px 0;
-	float: left;
-	white-space: nowrap;
+	clear: left;
+	font-weight: 300;
+	padding: 5px;
+	text-align: right;
+	margin: 0;
+}
+.second-nav li {
+	list-style: none;
+	display: inline-block;
+	border-left: 1px dashed #b97ea0;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.second-nav li:first-of-type {
+	border: none;
 }
 .second-nav a {
 	text-decoration: none;
 	color: white;
 }
-.second-nav span a{
-	font-weight: 300;
+.second-nav .active a{
+	font-weight: 700;
 }
-.second-nav em {
-	padding-left: 5px;
-	padding-right: 5px;
-}
+
 /* @end*/ 
 /* @group button*/ 
 button {
@@ -581,7 +591,7 @@ button a {
 	margin: 0;
 	padding: 0;
 }
-.inner_wrap {
+.inner-wrap {
 	min-height: 100%;
 	margin: 0;
 	padding: 0;
@@ -601,7 +611,8 @@ button a {
 	color: #fefeff;
 	font: 1.1em;
 	padding-bottom: 40px;
-	margin-left: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 .container-pic {
 	margin-right: 40px;
@@ -759,34 +770,28 @@ textarea {
 /* @end*/
 /* @group map*/
 .mappanel {
-	width: 80%;
-	background-color: #b2b3b5;
-	margin-right: 2%;
-	margin-top: 30px;
-	clear: both;
-	margin-left: 20px;
+	background-color: #1e1a34;
+	width: 100%;
 	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 }
 .map img {
-	float: none;
-	clear: both;
-	width: 80%;
-	margin: 5% 5% 5% 8%;
-	padding: 0;
-	border: 10px solid #fff;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+	width: 90%;
+	margin-top: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 .map h4 {
-	margin-bottom: 0;
-	padding-bottom: 5px;
+	padding-left: 5%;
+}
+.vcard {
+	margin-left: 0;
+	padding-left: 5%;
+	padding-bottom: 15px;
 }
 .vcard li{
 	list-style: none;
 	padding: 4px;
+	margin: ;
 }
 .vcard li a {
 	text-decoration: none;
@@ -803,6 +808,7 @@ textarea {
 .offers.container h2 {
 	margin-top: 60px;
 	position: static;
+	margin-left: 0;
 }
 .offers.container img {
 	width: 35%;
@@ -822,8 +828,9 @@ textarea {
 	color: #fefeff;
 	font: 1.1em;
 	padding-bottom: 100px;
-	margin-left: 10%;
+	margin-left: 5%;
 	padding-left: 0;
+	margin-right: 5%;
 }
 .blog.container h2 {
 	position: static;
@@ -919,6 +926,9 @@ small {
 /* 560px/14px = 30em */ {
 	h1 {
 		margin-left: 55px;
+		background: url(../img/dunowen-logo.png) no-repeat;
+		height: 100px;
+		margin-bottom: 10px;
 	}
 	h2 {
 		font-size: 1.8em;
@@ -1032,9 +1042,9 @@ small {
 		margin-bottom: 20px;
 	}
 	.mappanel {
-		width: 40%;
+		/*width: 40%;
 		display: inline-block;
-		margin-left: 40px;
+		margin-left: 40px;*/
 	}
 }
 @media (min-width:73.1em) 
@@ -1141,7 +1151,7 @@ small {
 		color: #eeeeee;
 	}
 	.main .address p{
-		margin: -10px 40px 4px 10%;
+		margin: -10px 5% 4px;
 		padding-bottom: 5px;
 		text-align: left;
 	}
@@ -1169,6 +1179,8 @@ small {
 	.news {
 		clear: both;
 		padding: 0 0 50px;
+		position: relative;
+		bottom: 0;
 	}
 	.news h3{
 		margin-left: 0;
@@ -1204,5 +1216,24 @@ small {
 	.blog.container {
 		height: 800px;
 	}
-	}
-	/* @end */
+}
+/* @end */
+/* @group RETINA MEDIA QUERIES */
+	@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   -moz-min-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+    h1 {
+    	background-image: url(../img/dunowen-logo@2x.png); 
+	    /* actual image size = 280px by 200px */
+        background-size: 120px 86px;
+       }
+}
+
+
+/* @end */
+
+
