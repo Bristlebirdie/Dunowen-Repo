@@ -615,20 +615,20 @@ button a {
 	margin-right: 5%;
 }
 .container-pic {
-	margin-right: 40px;
 	margin-top: 2px;
 }
 .container-pic img {
 	width: 35%;
 	float: right;
-	margin: 5px 20px 15px 15px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;
 }
 .container p {
 	margin-top: 0;
-	margin-right: 40px;
 	margin-bottom: 20px;
 	word-wrap: break-word;
-	width: 90%;
+	width: 100%;
 	font-size: 1.1em;
 	line-height: 20px;
 }
@@ -639,7 +639,6 @@ button a {
 article {
 	height: auto;
 	margin-top: 40px;
-	margin-right: 15%;
 	margin-bottom: 80px;
 }
 /* @group rates*/ 
@@ -820,7 +819,7 @@ textarea {
 	margin-right: 10%;
 }
 .offers-intro {
-	margin-right: 10%;
+	
 }
 /* @end*/
 /* @group BLOG*/ 
@@ -969,7 +968,7 @@ small {
 	}
 	.address {
 		padding-top: 20px;
-		margin-left: 2%;
+		margin-left: 3%;
 	}
 	.social {
 		margin-left: 75%;
@@ -999,7 +998,6 @@ small {
 	}
 	article .blog-post {
 		word-wrap: break-word;
-
 	}
 	.post-pic img{
 		padding-right: 25px;
@@ -1021,9 +1019,6 @@ small {
 	}
 	.second-nav {
 		padding-right: 10%;
-	}
-	.container-pic {
-		margin-right: 80px;
 	}
 	.container-pic img {
 		width: 25%;
@@ -1172,9 +1167,6 @@ small {
 	}
 	.container { 
 		max-width: 1000px;
-	}
-	.container p {
-		margin-right: 40px;
 	}
 	.news {
 		clear: both;
