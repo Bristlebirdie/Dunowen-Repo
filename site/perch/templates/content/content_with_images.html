@@ -1,0 +1,13 @@
+<div class="container">
+    
+    <h3><perch:content id="heading" title="true" type="text" label="Heading" /></h3>  
+	
+	<div class="container-pic">
+		<perch:repeater id="sq_img" label="Images" max="2">
+		     <img src="<perch:content id="image" type="image" label="Square Image" width="300" height="300" crop="true" />" alt="<perch:content id="alt" type="text" label="Image description" />" />
+		</perch:repeater>
+    </div>
+    
+    <perch:content id="content" type="textarea" label="Main content"  textile="true" editor="markitup" />
+    
+</div><!--end container-->

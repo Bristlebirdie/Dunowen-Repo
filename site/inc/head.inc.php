@@ -18,6 +18,6 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
                
-    <title>Dunowen House</title>
+    <title><?php perch_pages_title(); ?></title>
     
 </head>

@@ -118,6 +118,104 @@
 		        </div><!--end gallery-->
 		        
 	        	<div class="container">
+				        <h3>Self-Catering Rental Prices</h3>  
+				        <p> Main house sleeps up to 18 guests</p> 
+				        <table class="selfcater">
+				            <tr class="toprow">
+				              <th>Period</th>
+				              <th>Weekly Rate</th>
+				              <th>Nightly Rate</th>
+				              <th>Min Stay</th>
+				              <th>Changeover</th>
+				            </tr>
+				            <br>
+				            <tr>
+				              <td>High Season 2014<br>
+				              14/6/14 to 14/6/14
+				              </td>
+				              <td> €2,800</td>
+				              <td> </td>
+				              <td>7 nights</td>
+				              <td>Saturday</td>
+				            </tr>
+				            <tr>
+				              <td>Mid Season 2014<br>
+				              30/8/14 to 02/11/14</td>
+				              <td>€2,500</td>
+				              <td>€550</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Low Season 2014<br>
+				              02/11/14 to 21/12/14</td>
+				              <td>€2,200	</td>
+				              <td>€450</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Christmas / New Year 2014<br>
+				              21/12/14 to 04/1/15</td>
+				              <td>€2,800</td>
+				              <td>€550</td>
+				              <td>5 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Low Season 2015<br>
+				              04/1/15 to 04/4/15</td>
+				              <td>€2,200	</td>
+				              <td>€450</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Mid Season 2015<br>
+				              04/4/15 to 30/5/15</td>
+				              <td>€2,500</td>
+				              <td>€550</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>High Season 2015<br>
+				              30/5/15 to 29/8/15</td>
+				              <td>€2,800</td>
+				              <td> </td>
+				              <td>7 nights</td>
+				              <td>Saturday</td>
+				            </tr> 
+				            <tr>
+				              <td>Mid Season 2015<br>
+				              29/8/15 to 31/10/15</td>
+				              <td>€2,500</td>
+				              <td> €550</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Low Season 2015<br>
+				              31/10/15 to 19/12/15</td>
+				              <td>€2,200</td>
+				              <td> €450</td>
+				              <td>3 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				            <tr>
+				              <td>Christmas / New Year 2015<br>
+				              19/12/15 to 02/1/16</td>
+				              <td>€2,800</td>
+				              <td> €550</td>
+				              <td>5 nights</td>
+				              <td>Flexible</td>
+				            </tr> 
+				        </table> 
+				        <br>
+				        
+				         <button><a href="contact.html">Book Now</a></button>
+				        
+				        
 				        <h3>B&amp;B Rates and Reservations for 2014</h3>  
 				        
 				       <ul class="bandb">
@@ -129,106 +227,10 @@
 				       </ul>
 				       
 				       <br> 
-				       <p>If you would like to book more than three rooms, please call us to discuss how we can best meet your requirements.				       </p> 
+				       <p>If you would like to book more than three rooms, please call us to discuss how we can best meet your requirements.</p> 
 				       <button><a href="contact.html">Book Now</a></button>
 				       
-				       <h3>Self-Catering Rental Prices</h3>  
-				       <p> For up to 18 guests</p> 
-				       <table class="selfcater">
-					       <tr class="toprow">
-					         <th>Period</th>
-					         <th>Weekly Rate</th>
-					         <th>Nightly Rate</th>
-					         <th>Min Stay</th>
-					         <th>Changeover</th>
-					       </tr>
-					       <br>
-					       <tr>
-					         <td>High Season 2014<br>
-					         14/6/14 to 14/6/14
-					         </td>
-					         <td> €2,800</td>
-					         <td> </td>
-					         <td>7 nights</td>
-					         <td>Saturday</td>
-					       </tr>
-					       <tr>
-					         <td>Mid Season 2014<br>
-					         30/8/14 to 02/11/14</td>
-					         <td>€2,500</td>
-					         <td>€550</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Low Season 2014<br>
-					         02/11/14 to 21/12/14</td>
-					         <td>€2,200	</td>
-					         <td>€450</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Christmas / New Year 2014<br>
-					         21/12/14 to 04/1/15</td>
-					         <td>€2,800</td>
-					         <td>€550</td>
-					         <td>5 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Low Season 2015<br>
-					         04/1/15 to 04/4/15</td>
-					         <td>€2,200	</td>
-					         <td>€450</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Mid Season 2015<br>
-					         04/4/15 to 30/5/15</td>
-					         <td>€2,500</td>
-					         <td>€550</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>High Season 2015<br>
-					         30/5/15 to 29/8/15</td>
-					         <td>€2,800</td>
-					         <td> </td>
-					         <td>7 nights</td>
-					         <td>Saturday</td>
-					       </tr> 
-					       <tr>
-					         <td>Mid Season 2015<br>
-					         29/8/15 to 31/10/15</td>
-					         <td>€2,500</td>
-					         <td> €550</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Low Season 2015<br>
-					         31/10/15 to 19/12/15</td>
-					         <td>€2,200</td>
-					         <td> €450</td>
-					         <td>3 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-					       <tr>
-					         <td>Christmas / New Year 2015<br>
-					         19/12/15 to 02/1/16</td>
-					         <td>€2,800</td>
-					         <td> €550</td>
-					         <td>5 nights</td>
-					         <td>Flexible</td>
-					       </tr> 
-				       </table> 
-				       <br>
-				       
-				        <button><a href="contact.html">Book Now</a></button>
-				        
+				       				       				        
 				        <h3>Terms and Conditions:</h3>   
 				         
 				         <h4>Room rates</h4>

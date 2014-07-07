@@ -1,12 +1,13 @@
-<a href="index.html" title="Dunowen House"><h1>Dunowen House</h1></a>
+
+<a href="index.php" title="Dunowen House"><h1>Dunowen House</h1></a>
 <a id="jump-top" href="#menu" class="menu-link ">&#9776; Menu</a>
 <nav id="main-nav" roll="navigation" class="main-nav">
 	<ul id="menu" class="menu">
-        <li><a href="welcome.html">Welcome</a></li>
-        <li><a href="about.html">Dunowen House</a>
+        <li><a href="welcome.php">Welcome</a></li>
+        <li><a href="about.php">Dunowen House</a>
         	<ul class="sub-menu">
-            	<li><a href="#">History</a></li>
-            	<li><a href="map.html">Map &amp; Directions</a></li>
+            	<li><a href="history.php">History</a></li>
+            	<li><a href="map.php">Map &amp; Directions</a></li>
         	</ul>
         </li>
         <li><a href="#">Your Stay</a>
@@ -37,4 +38,4 @@
         </li>
         <li class="back"><a href="#header">back</a></li>
     </ul>
-</nav>
+

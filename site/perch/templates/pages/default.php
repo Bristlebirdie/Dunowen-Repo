@@ -1,19 +1,38 @@
-<?php include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-	<title><?php perch_pages_title(); ?></title>
-	<?php perch_get_css(); ?>
-</head>
+<?php
+	include 'perch/runtime.php';
+	include 'inc/head.inc.php';
+?>
+
 <body>
-    <h1><?php perch_content('Main heading'); ?></h1>
-
-    <?php perch_pages_navigation(); ?>
-
-    <?php perch_content('Intro'); ?>
-    
-
-    <?php perch_get_javascript(); ?>
+	<?php include 'inc/browsehappy.inc.php'; ?>
+	<div class="wrapper">
+		<div class="inner-wrap">
+			
+			<header>
+		        <?php include 'inc/nav.inc.php'; ?>
+			          	<ul class="second-nav">
+			          		<li class="active"><a href="about.html">Dunowen House</a></li> 
+			          	    <li><a href="#">History</a></li> 
+			          	    <li><a href="map.html">Map &amp; Directions</a></li>
+			          	</ul>
+					</nav>
+		        <?php include 'inc/contacts.inc.php'; ?>
+			</header>
+			
+	        <div class="main">		        
+		        <?php include 'inc/address.inc.php'; ?>
+				
+				<div class="gallery">
+					<?php perch_content('Slideshow'); ?>	
+				</div><!--end gallery-->	        	
+				
+				<?php perch_content('Content'); ?>
+		        <?php include 'inc/news.inc.php'; ?>
+           </div> <!--end main-->
+           
+    	</div> <!--end inner-wrap-->
+		<?php include 'inc/footer.inc.php'; ?>	  	   
+	</div><!--end wrapper--> 
+	<?php include 'inc/scripts.inc.php'; ?>	    
 </body>
 </html>

@@ -624,6 +624,9 @@ button a {
 	margin-bottom: 15px;
 	margin-left: 10px;
 }
+.container-pic li {
+	list-style: none;
+}
 .container p {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -945,9 +948,6 @@ small {
 	.col {
 		max-width: 50%;
 	}
-	footer {
-		padding-left: 20px;
-	}
 	.address span {
 		display: inline;
 	}
@@ -966,10 +966,6 @@ small {
 		margin-top: 20px;
 		display: inline-block;
 	}
-	.address {
-		padding-top: 20px;
-		margin-left: 3%;
-	}
 	.social {
 		margin-left: 75%;
 		margin-top: -40px;
@@ -977,6 +973,20 @@ small {
 	}
 	footer {
 		height: 100px;
+	}
+	.address {
+		display: inline-block;
+		padding-top: 20px;
+		width: 70%;
+		margin-left: 5%;
+		text-align: left;
+	}
+	.address p {
+		margin: 0;
+		padding: 0;
+	}
+	.address span {
+		display: inline;
 	}
 	small {
 		margin-top: 0;
@@ -1040,6 +1050,9 @@ small {
 		/*width: 40%;
 		display: inline-block;
 		margin-left: 40px;*/
+	}
+	.address {
+		
 	}
 }
 @media (min-width:73.1em) 
@@ -1171,8 +1184,8 @@ small {
 	.news {
 		clear: both;
 		padding: 0 0 50px;
-		position: relative;
 		bottom: 0;
+		margin-bottom: -40px;
 	}
 	.news h3{
 		margin-left: 0;
@@ -1186,14 +1199,8 @@ small {
 	/* @end*/
 	
 	/* @group footer*/ 
+
 	footer {
-		bottom: -1px;
-		width: 81%;
-		margin-left: 19%;
-		height: 100px;
-		margin-top: 1px;
-		position: absolute;
-		z-index: -1;
 		display: none;
 	}
 	footer .address {
