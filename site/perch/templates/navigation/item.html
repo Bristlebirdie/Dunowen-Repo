@@ -1,0 +1,6 @@
+<perch:before><ul id="menu" class="menu"></perch:before>
+<li<perch:if exists="current_page"> class="active"</perch:if><perch:if exists="ancestor_page"> class="active"</perch:if>><a href="<perch:pages id="pagePath" />"><perch:pages id="pageNavText" /></a>
+<perch:pages id="subitems" encode="false" />
+</li>
+<perch:after><li class="back"><a href="#header">back</a></li>
+</ul></perch:after>

@@ -922,6 +922,14 @@ small {
 
 /* @end */
 
+/* @group PERCH */
+.cmsmap {
+	margin-left: 5%;
+	max-width: 300px;
+}
+
+/* @end */
+
 /* @group MEDIA QUERIES */
 
 @media (min-width:30em)
@@ -951,6 +959,13 @@ small {
 	.address span {
 		display: inline;
 	}
+	/* @group PERCH */
+	.cmsmap {
+		max-width: 400px;
+	}
+	
+	/* @end */
+	
 }
 
 @media (min-width:45em) {
@@ -1054,6 +1069,13 @@ small {
 	.address {
 		
 	}
+	/* @group PERCH */
+	.cmsmap {
+		margin-left: 5%;
+		max-width: 500px;
+	}
+	
+	/* @end */
 }
 @media (min-width:73.1em) 
 /* 1024px/14px = 73.1em */ {
