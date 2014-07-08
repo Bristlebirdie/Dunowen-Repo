@@ -4,5 +4,4 @@
 		'perch_blog',
 		'perch_forms',
 		'perch_gallery',
-		'perch_specialoffers', 
 	);

@@ -639,11 +639,6 @@ button a {
 	text-decoration: none;
 	color: #aa0061;
 }
-article {
-	height: auto;
-	margin-top: 40px;
-	margin-bottom: 80px;
-}
 /* @group rates*/ 
 ul.bandb {
 	width: 200px;
@@ -830,7 +825,6 @@ textarea {
 	color: #fefeff;
 	font: 1.1em;
 	padding-bottom: 100px;
-	margin-left: 5%;
 	padding-left: 0;
 	margin-right: 5%;
 }
@@ -839,6 +833,25 @@ textarea {
 	margin-bottom: 0;
 	margin-left: 0;
 }
+.hentry {
+	list-style: none;
+	text-decoration: none;
+}
+.hentry image {
+	width: 50px;
+	height: 50px;
+}
+.blog article {
+	height: auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	margin-left: -40px;
+}
+article button {
+	font-size: .9em;
+	margin: 15px 15px 15px 0;
+}
+
 /* @end*/
 
 /* @end STYLES*/
@@ -1008,21 +1021,24 @@ small {
 	}
 	/* @group BLOG*/ 
 	article {
-		display: inline-block;
+		margin-bottom: 40px;
+		display: table;
 	}
 	article img {
-		width: 50%;
-		float: left;
+		width: 45%;
+		clear: both;
+		display: table;
 	}
 	article .blog-intro {
-		width: 50%;
+		width: 45%;
+		margin-top: -190px;
 		float: right;
-		padding-left: 20px;
-		padding-bottom: 20px;
-		margin-top: -20px;
 	}
 	article .blog-post {
 		word-wrap: break-word;
+	}
+	article button {
+		margin-bottom: 40px;
 	}
 	.post-pic img{
 		padding-right: 25px;

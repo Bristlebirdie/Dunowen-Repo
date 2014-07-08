@@ -12,13 +12,14 @@
 			</header>
 	
 			<div class="main">		        
-			<?php include 'inc/address.inc.php'; ?>
+			<?php include 'inc/address.inc.php'; ?>	
 				<div class="gallery">
-				    <h1>Example A: gallery</h1>
+					<?php perch_content('Slideshow'); ?>	
+				</div><!--end gallery-->	
+				<div class="container">
 				
-				    <p>This demonstrates a simple gallery listing. Albums are listed in the navigation and also below using the optional ability to display a thumbnail for the album. 
-				    Clicking on any album takes you to the page for that album where thumbnails are displayed. Click a thumbnail to view a larger image.</p>
 				    <ul class="glist albumdisplay">
+				    
 				    <?php 
 				        perch_gallery_albums(array(
 				            'template'=>'a_album-image.html',
@@ -26,14 +27,13 @@
 				        )); 
 				    ?>
 				    </ul>
-				</div>
+				</div><!--end container-->
 				<nav class="sidebar">
 					<h2>Albums</h2>
 				    <ul class="glist albums">
 				    	<?php perch_gallery_albums(); ?>
 				    </ul>
 				</nav>
-				</div><!--end gallery-->
 				<?php include 'inc/news.inc.php'; ?>
 			</div> <!--end main-->
 		</div> <!--end inner-wrap-->
