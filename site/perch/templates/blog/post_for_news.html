@@ -1,0 +1,13 @@
+<perch:before>
+<ul class="hfeed listing"></perch:before>
+    <li class="postpage">
+    	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="40" height="40" crop="true" />" alt="<perch:blog id="postTitle" />" /></perch:if>
+        <h5><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" words="3" append="..."/></a></h5>
+        <div class="description entry-summary">
+	        <perch:blog id="excerpt" type="textarea" textile="true" words="22" append="..." />
+	        <button><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="Read More" />Find Out More</a></button>
+    	</div>
+   </li>
+<perch:after>   
+</ul>
+</perch:after>

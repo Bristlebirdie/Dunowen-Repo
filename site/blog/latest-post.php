@@ -18,15 +18,27 @@
 					<h2>Dunowen House <span>Blog post</span></h2>
 					<br>
 					<p><em>A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</em></p>
-					<?php perch_blog_post(perch_get('s')); ?>
+					<?php  
+					perch_blog_custom(array(
+					                'count' => 1,
+					                'template' => 'post.html',
+					                'sort' => 'postDateTime',
+					                'sort-order' => 'DESC',
+					            ));
+					?>
 				    	
 			    	<div class="meta">
-		                <?php perch_blog_post_categories(perch_get('s')); ?>
-		                <?php perch_blog_post_tags(perch_get('s')); ?>
-			        </div>
-				    	<?php// perch_blog_post_comments(perch_get('s')); ?>
-				    	
-				    	<?php// perch_blog_post_comment_form(perch_get('s')); ?>
+			    	    <div class="cats">
+			    	        <?php perch_blog_post_categories(perch_get('s')); ?>
+			    	    </div>
+			    	    <div class="tags">
+			    	        <?php perch_blog_post_tags(perch_get('s')); ?>
+			    	    </div>
+			    	</div>
+			    		<?php perch_blog_post_comments(perch_get('s')); ?>
+			    		
+			    		<?php perch_blog_post_comment_form(perch_get('s')); ?>
+			    		
 				</div><!--end container-->
 				<aside class="sidebar">
 					<h4>Archive</h4>

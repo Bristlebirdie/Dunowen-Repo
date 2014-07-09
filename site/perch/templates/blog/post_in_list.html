@@ -1,19 +1,20 @@
 <perch:before>
-<ul class="hfeed listing"><article></perch:before>
-    <li class="hentry">
+<ul class="hfeed listing">
+</perch:before>
+    <li class="bloglist">
+    	<article>
 	    	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50%" crop="true" />" alt="<perch:blog id="postTitle" />" /></perch:if>
-	    <div class="blog-intro">
-	        <h4><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h4>
-	        
-	        <p class="entry-published date"><perch:blog id="postDateTime" format="%d %B %Y" /></p>
-	        <div class="description entry-summary">
-	        <perch:blog id="excerpt" type="textarea" textile="true" />
-	        <p>Comments: <perch:blog id="postCommentCount"/></p>
-	        <button><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="Read More" />Read More >></a></button>
-	    </div>
+		    <div class="blog-intro">
+		        <h4><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h4>
+		        <p class="entry-published date">Posted on <perch:blog id="postDateTime" format="l jS F Y" /> by <perch:blog id="authorGivenName" type="text" /> <perch:blog id="authorFamilyName" type="text" /></p>
+		        <div class="description entry-summary">
+		        <perch:blog id="excerpt" type="textarea" textile="true" />
+		        <button><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="Read More" />Read More >></a></button>
+		    </div>
+    	</article>
     </li>
 <perch:after>
-</article>    
+    
 </ul>
     <perch:if exists="paging">
         <div class="paging">
