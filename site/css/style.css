@@ -463,24 +463,19 @@ h2 {
 	font-size: 1.4em;
 	font-weight: 300;
 	color: #fefeff;
-	position: absolute;
+	width: 100%; 
+	position: absolute; 
 	top: 130px;
+	z-index: 5;
 }
 h2 span {
 	font-style: italic;
 }
 h3 {
-	font-size: .9em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-top: 0;
-	padding-top: 10px;
-}
-h3 {
-	font-size: 1.5em;
-	margin: 0;
-	font-weight: 300;
-	padding-bottom: 35px;
+	padding-bottom: 20px;
 	padding-top: 30px;
 }
 h3 span {
@@ -606,6 +601,8 @@ button a {
 .gallery {
 	clear: both;
 	margin-bottom: -3px;
+	z-index: 1;
+	position: relative;
 }
 .container {
 	color: #fefeff;
@@ -639,6 +636,20 @@ button a {
 	text-decoration: none;
 	color: #aa0061;
 }
+.calendar-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.calendar-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* @group rates*/ 
 ul.bandb {
 	width: 200px;
@@ -648,6 +659,9 @@ ul.bandb li {
 }
 ul.bandb li em {
 	float: right;
+}
+.selfcater {
+	margin-top: 40px;
 }
 .selfcater table, th, td {
    border: 1px solid #494747;
@@ -939,9 +953,7 @@ form {
 	padding-right: 2px;
 	height: 100%;
 }
-#form1_message {
-	margin-top: 1em;
-}
+
 input {
 	margin-top: 1em;
 	margin-bottom: 1em;
@@ -953,7 +965,7 @@ label {
     white-space: nowrap;
        
 }
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
     padding: 4px 10px;
     outline: 0;
@@ -970,12 +982,11 @@ input[type="text"], input[type="email"], textarea {
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
     -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
-    
 }
 input[type="text"], input[type="email"] {
     height: 2em;
 }
-input[type="checkbox"], input[type="date"], input[type="number"] {
+input[type="checkbox"], input[type="number"] {
     height: 2em;
     background-color: #dedcdc;
     border-radius: 5px;
@@ -995,8 +1006,23 @@ input[type="checkbox"], input[type="date"], input[type="number"] {
 textarea {
     height: 10em;;
 }
-#form1_checkin {
+#message {
+	margin-top: 1em;
+}
+#checkin {
 	display: inline-block;
+}
+.alert_success {
+	background-color: #1e1a34;
+	width: 50%; 
+	min-height: 150px;
+	position: absolute; 
+	top: 130px;
+	z-index: 5;
+	padding: 20px 20px 20px 40px;
+		border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 /* @end*/
 /* @group PERCH */
@@ -1087,7 +1113,10 @@ textarea {
 	article {
 		margin-bottom: 40px;
 	}
-	article img {
+	article.blog-list {
+		margin-bottom: 0;
+	}
+	article.blog-list img {
 		width: 45%;
 		float: left;
 		padding-top: 25px;
@@ -1109,6 +1138,11 @@ textarea {
 	}
 	.blog-post h4 {
 		margin-top: 0;
+	}
+	.blog h3 {
+		padding-top: 48px;
+		margin-bottom: 32px;
+		padding-bottom: 0;
 	}
 	}
 @media (min-width:59em)
@@ -1154,9 +1188,12 @@ textarea {
 		float: right;
 		clear: both;
 	}
-	.sidebar {
-		margin-top: 158px;
+	.blog-post {
+		margin-top: 80px;
 	}
+	/*.sidebar {
+		margin-top: 158px;
+	}*/
 /* @end */
 
 /* @group FORM*/ 
@@ -1186,12 +1223,11 @@ textarea {
 		width: 65%;
 	}
 	h2 {
-		font-size: 2.71em;
+		font-size: 2.8em;
 		margin-top: 0;
 	}
 	h3 {
-		font-size: 2.1em;
-		margin-top: 0;
+		font-size: 1.8em;
 	}
 	h4 {
 		font-size: 1.3em;
