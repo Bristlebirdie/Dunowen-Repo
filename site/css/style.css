@@ -834,16 +834,9 @@ small {
 .clearfix { zoom: 1; }
 /* @end */
 /* @group MAP*/
-.mappanel {
-	background-color: #1e1a34;
-	width: 100%;
-	border-radius: 5px;
-}
-.map img {
+.map {
 	width: 90%;
-	margin-top: 20px;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-top: 40px;
 }
 .map h4 {
 	padding-left: 5%;
@@ -852,6 +845,7 @@ small {
 	margin-left: 0;
 	padding-left: 5%;
 	padding-bottom: 15px;
+	margin-top: 40px;
 }
 .vcard li{
 	list-style: none;
@@ -897,6 +891,12 @@ small {
 }
 .blog article {
 	position: relative;
+}
+.blog-post img {
+	width: 40%;
+	margin-right: 5%;
+	float: left;
+	margin-bottom: 5%;
 }
 article button {
 	font-size: .9em;
@@ -1052,9 +1052,6 @@ textarea {
 	margin-bottom: 0;
 	margin-left: 0;
 
-}
-.primary-content {
-	margin-top: 60px;
 }
 .gallery.sidebar {
 	margin-left: 0;
@@ -1269,7 +1266,11 @@ textarea {
 	.social {
 		margin-left: 80%;
 	}
-	
+	.vcard {
+		margin-top: -220px;
+		padding-left: 550px;
+		margin-bottom: 100px;
+	}
 /* @group BLOG */
 	.blog p em {
 		position: absolute;
@@ -1295,9 +1296,9 @@ textarea {
 	.blog-post {
 		margin-top: 80px;
 	}
-	/*.sidebar {
-		margin-top: 158px;
-	}*/
+	.blog-post img {
+		width: 50%;
+	}
 /* @end */
 
 /* @group FORM*/ 
@@ -1316,7 +1317,7 @@ textarea {
 	}
 	aside.gallery {
 		position: absolute;
-		top: 20px;
+		top: -40px;
 		left: 80%;
 	}
 
@@ -1485,10 +1486,6 @@ textarea {
 	/* @group GALLERY */
 	.gallery.container h2{
 		margin-top: 60px;
-	}
-	aside.gallery {
-		top: 0px;
-		margin-top: 210px;
 	}
 	.slideshow-nav {
 		width: 85%;

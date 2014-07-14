@@ -9,8 +9,7 @@
 	?>
 	
 	<?php 
-	
-	if(strpos($_SERVER['REQUEST_URI'], 'post.php') || strpos($_SERVER['REQUEST_URI'], 'archive.php')==false) {
+	if(strpos($_SERVER['REQUEST_URI'], 'post.php')===false && strpos($_SERVER['REQUEST_URI'], 'archive.php')===false) {
 	
 		perch_pages_navigation(array
 		(
@@ -20,6 +19,7 @@
 		)); 
 
 	}
+
 	?>
 
 </nav>
