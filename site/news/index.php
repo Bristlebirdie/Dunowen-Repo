@@ -1,9 +1,10 @@
 <?php 
 	include('../perch/runtime.php'); 
-	include '../inc/headblog.inc.php';
+	include '../inc/head.inc.php';
 	?>
-	 <title>Blog Listing</title>   
+	<title><?php perch_blog_post_field(perch_get('s'), 'postTitle'); ?> Blog Post</title>   
 	</head>
+	
 <body>
 <?php include '../inc/browsehappy.inc.php'; ?>
 	<div class="wrapper">
@@ -33,26 +34,7 @@
 				<p><a href="archive.php">More posts</a></p>
 				
 				</div>
-				<aside>
-					<h4>Archive</h4>
-					<!--  By most recent posts -->
-				    <?php  
-				    perch_blog_custom(array(
-				                    'count' => 10,
-				                    'template' => 'post_list_link.html',
-				                    'sort' => 'postDateTime',
-				                    'sort-order' => 'DESC',
-				                    'section'=>'posts',
-				                    'filter'=>'posts',
-				                ));
-				    ?>
-				    <!--  By category listing -->
-				    <?php perch_blog_categories(); ?>
-				    <!--  By tag -->
-				    <?php perch_blog_tags(); ?>
-				    <!--  By months and year -->
-				    <?php perch_blog_date_archive_months(); ?>
-				</aside>
+				<?php include '../inc/blog-sidebar.inc.php'; ?>
 				<?php include '../inc/news.inc.php'; ?>
 			</div> <!--end main-->
 		</div> <!--end inner-wrap-->

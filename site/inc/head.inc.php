@@ -12,9 +12,9 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width">
     
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/css/style.css"/>
+    <link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/css/menu.css" />
+    <link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/css/flexslider.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
                

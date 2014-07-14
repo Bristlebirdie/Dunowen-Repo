@@ -9,7 +9,7 @@
 	<div class="wrapper">
 		<div class="inner-wrap">
 			<header>
-			    <?php include '../inc/nav.inc.php'; ?>
+			    <?php include $_SERVER['DOCUMENT_ROOT'] .'/inc/nav.inc.php'; ?>
 			    <?php include '../inc/contacts.inc.php'; ?>
 			</header>
 			<div class="main">		        
@@ -25,28 +25,10 @@
 		                <?php perch_blog_post_tags(perch_get('s')); ?>
 			        </div>
 				    	<?php// perch_blog_post_comments(perch_get('s')); ?>
-				    	
 				    	<?php// perch_blog_post_comment_form(perch_get('s')); ?>
 				</div><!--end container-->
 				
-				<aside class="sidebar">
-				<h4>Archive</h4>
-					<!--  By most recent posts -->
-				    <?php  
-				    perch_blog_custom(array(
-				                    'count' => 10,
-				                    'template' => 'post_list_link.html',
-				                    'sort' => 'postDateTime',
-				                    'sort-order' => 'DESC',
-				                ));
-				    ?>
-				    <!--  By category listing -->
-				    <?php perch_blog_categories(); ?>
-				    <!--  By tag -->
-				    <?php perch_blog_tags(); ?>
-				    <!--  By months and year -->
-				    <?php perch_blog_date_archive_months(); ?>    
-				</aside>	
+				<?php include '../inc/blog-sidebar.inc.php'; ?>
 				<?php include '../inc/news.inc.php'; ?>
 			</div> <!--end main-->
 		</div> <!--end inner-wrap-->

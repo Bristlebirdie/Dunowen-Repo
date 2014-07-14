@@ -8,13 +8,18 @@
 	)); 
 	?>
 	
-	<?php perch_pages_navigation(array
-	(
-			'from-path'=> '*',
-			'from-level'=> 2,
-			'template'=> 'second.html'
-			
-	)); 
+	<?php 
+	
+	if(strpos($_SERVER['REQUEST_URI'], 'post.php') || strpos($_SERVER['REQUEST_URI'], 'archive.php')==false) {
+	
+		perch_pages_navigation(array
+		(
+				'from-path'=> '*',
+				'from-level'=> 2,
+				'template'=> 'second.html'				
+		)); 
+
+	}
 	?>
 
 </nav>

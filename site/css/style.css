@@ -1,5 +1,6 @@
 /* @override 
-	http://localhost/dunowenhouse.ie/site/style.css */
+	http://localhost/dunowenhouse.ie/site/style.css
+	http://dunowenhouse/css/style.css */
 
 
 /* -----------------------------------------------
@@ -1032,6 +1033,109 @@ textarea {
 }
 
 /* @end */
+
+/* @group GALLERY */
+.primary-content .glist,
+.sidebar .glist,
+.glist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.gallery.container {
+	padding-top: 1px;
+	padding-left: 0;
+	margin-right: 5%;
+}
+.gallery.container h2 {
+	position: static;
+	margin-bottom: 0;
+	margin-left: 0;
+
+}
+.primary-content {
+	margin-top: 60px;
+}
+.gallery.sidebar {
+	margin-left: 0;
+}
+
+/* for containers, act as a clearing device */
+.cont {
+	overflow: auto;
+}
+
+.allalbums > li {
+	clear: left;
+}
+
+.imagelisting li {
+	float: left;
+	width: 100px;
+	margin: 0 10px 10px 0;
+}
+
+.slideshow-nav li {
+	float: left;
+	padding: 5px 0 5px 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.slideshow-nav li:first-child {
+	padding-left: 0;
+}
+
+.slideshow-nav li img {
+	width: 76px;
+	height: 76px;
+	opacity: 0.5;
+}
+
+.slideshow-nav li.activeSlide img,
+.slideshow-nav li a:hover img {
+	opacity: 1;
+}
+
+/*.albumdisplay li {
+	float: left;
+	width: 120px;
+	margin: 0 20px 20px 0;
+}
+
+.albumdisplay li img:hover {
+	border: 2px solid #000;
+}
+
+.albumdisplay li img {
+	display: block;
+	border: 2px solid #ccc;
+}*/
+
+/*.pager {
+    margin: 1.5em 0;
+    overflow: hidden;
+    padding-top: .8em;
+}
+
+.pager li {
+    float: left;
+    width: 10em;
+}
+
+.pager li.paging-label {
+	float: none;
+	width: 100%;
+	padding: 0 0 1em 0;
+}
+
+.pager a.paging-next {
+	text-align:right;
+}
+*/
+
+/* @end */
+
 /* @end */
 /* @group MEDIA QUERIES */
 
@@ -1203,6 +1307,20 @@ textarea {
 		margin-bottom: 20px;
 	}
 	/* @end */
+	/* @group GALLERY */
+	.primary-content {
+		width: 68%;
+		display: inline-block;
+		margin-right: -20px;
+		padding-right: 0;
+	}
+	aside.gallery {
+		position: absolute;
+		top: 20px;
+		left: 80%;
+	}
+
+	/* @end */
 	/* @group PERCH */
 	.cmsmap {
 		margin-left: 5%;
@@ -1363,11 +1481,19 @@ textarea {
 		display: inline-block;
 		margin-top: 183px;
 	}
-	
-	
-	
 	/* @end*/
-	
+	/* @group GALLERY */
+	.gallery.container h2{
+		margin-top: 60px;
+	}
+	aside.gallery {
+		top: 0px;
+		margin-top: 210px;
+	}
+	.slideshow-nav {
+		width: 85%;
+	}
+		/* @end */
 	/* @group footer*/ 
 
 	footer {
