@@ -17,8 +17,6 @@
 				<div class="blog container clearfix">
 					<h2>Dunowen House <span>Special Offers</span></h2>
 
-    		    		<!--<?php perch_blog_section(perch_get('section')); ?>-->
-    		    
 	    		    	<?php perch_blog_custom([
 	    		    		'section'=>'special-offers',
 	    		    		'filter'=>'special-offers',
