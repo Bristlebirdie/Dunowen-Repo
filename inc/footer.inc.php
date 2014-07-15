@@ -11,5 +11,5 @@
 	    <a class="twitter" href="https://twitter.com/dunowenhouse" target="_blank" title="twitter">twitter</a>
 	    <a class="tripadvisor" href="http://www.tripadvisor.ie/VacationRentalReview-g211877-d2053918-Dunowen_House-Clonakilty_County_Cork.html" target="_blank" title="tripadvisor">tripadvisor</a>
 	</div><!--end social-->
-	<small>&copy; Dunowen House 2014. All rights reserved.</small>
+	<small>&copy; Dunowen House 2014. All rights reserved. <a href="http://bristlebird.com" target="_blank">Website developed by Bristlebird Media Works.</a></small>
 </footer>

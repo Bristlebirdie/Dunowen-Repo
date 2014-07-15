@@ -473,7 +473,7 @@ h2 span {
 	font-style: italic;
 }
 h3 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 	text-transform: uppercase;
 	font-weight: 300;
 	padding-bottom: 20px;
@@ -487,7 +487,7 @@ h4 {
 	font-weight: 300;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 }
 h5 {
 	margin-top: 20px;
@@ -677,58 +677,6 @@ tr {
 	height: 40px;
 }
 /* @end*/ 
-/* @group news*/ 
-.news {
-	color: #fefeff;
-	background-color: #1e1a34;
-	width: 100%;
-	padding-bottom: 60px;
-	border-top: 1px dashed #494747;
-}
-.news li {
-	list-style: none;
-}
-.news h5 a {
-	text-decoration: none;
-	color: #fff;
-}
-.news h5 a:hover {
-	color: #aa0061;
-}
-.news p{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: .9em;
-}
-.news img {
-	float: left;
-	padding: 5px 15px 5px 5px;
-	width: 100px;
-	/*margin-bottom: 40px;*/
-}
-.news button {
-	margin-right: 10px;
-	font-size: .9em;
-	margin-top: 15px;
-}
-.news button a:hover {
-	color: #aa0061;
-}
-.postpage {
-	margin-left: -40px;
-}
-.col {
-	max-width: 70%;
-	word-wrap:break-word;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-.col:nth-child(3) {
-	padding-left: 80px;
-	padding-top: 40px;
-}
-/* @end*/
-
 /* @group offers*/ 
 .offers.container {
 	color: #fefeff;
@@ -756,6 +704,67 @@ tr {
 
 
 /* @end STYLES*/
+
+/* @group news*/ 
+.news {
+	color: #fefeff;
+	background-color: #1e1a34;
+	width: 100%;
+	/*padding-bottom: 60px;*/
+	border-top: 1px dashed #494747;
+}
+.news li {
+	list-style: none;
+}
+.news h5 a {
+	text-decoration: none;
+	color: #fff;
+}
+.news h5 a:hover {
+	color: #aa0061;
+}
+.news p{
+	margin-bottom: 10px;
+	font-size: .9em;
+}
+.news img {
+	float: left;
+	padding: 5px 15px 5px 5px;
+	width: 100px;
+}
+.news button {
+	margin-right: 10px;
+	margin-top: 15px;
+	font-size: .9em;
+	margin-left: -35px;
+}
+.news button a:hover {
+	color: #aa0061;
+}
+.col {
+	max-width: 70%;
+	word-wrap:break-word;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 200px;
+}
+.col:nth-child(3) {
+	padding-top: 40px;
+	padding-left: 5px;
+}
+.col:nth-child(3) button {
+	margin-left: 0px;
+}
+.postpage {
+	margin-left: -40px;
+}
+.postpage p {
+	height: 70px;
+}
+.news small {
+	display: none;
+}
+/* @end*/
 
 /*@group footer*/
  
@@ -825,6 +834,12 @@ small {
 	text-align: center;
 	display: table;
 	padding-bottom: 20px;
+	color: #7a7a7a;
+	width: 80%;
+}
+small a{
+	color: #7a7a7a;
+	text-decoration: none;
 }
 /* @end */
 
@@ -855,6 +870,10 @@ small {
 .vcard li a {
 	text-decoration: none;
 	color: #aa0061;
+}
+.cmsmap {
+	margin-left: 5%;
+	max-width: 300px;
 }
 /* @end*/
 /* @group BLOG*/ 
@@ -950,21 +969,16 @@ aside a:hover {
 /* @group FORM*/
 form {
 	width: 90%;
-	margin-left: ;
-	padding-right: 2px;
 	height: 100%;
 }
-
 input {
 	margin-top: 1em;
 	margin-bottom: 1em;
-	
 }
 label {
     display: inline-block;
     width: 70%;
     white-space: nowrap;
-       
 }
 input[type="text"], input[type="email"], input[type="tel"], textarea {
     width: 100%;
@@ -1021,17 +1035,10 @@ textarea {
 	top: 130px;
 	z-index: 5;
 	padding: 20px 20px 20px 40px;
-		border-radius: 5px;
+	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 }
-/* @end*/
-/* @group PERCH */
-.cmsmap {
-	margin-left: 5%;
-	max-width: 300px;
-}
-
 /* @end */
 
 /* @group GALLERY */
@@ -1051,12 +1058,10 @@ textarea {
 	position: static;
 	margin-bottom: 0;
 	margin-left: 0;
-
 }
-.gallery.sidebar {
-	margin-left: 0;
+.gallery.container h4 {
+	font-size: 1.3em;
 }
-
 /* for containers, act as a clearing device */
 .cont {
 	overflow: auto;
@@ -1158,18 +1163,25 @@ textarea {
 		padding: 5px 20px 25px 5px;
 	}
 	.col {
-		max-width: 50%;
+		width: 60%;
 	}
 	.address span {
 		display: inline;
+		width: 100%;
 	}
-	/* @group PERCH */
+	small {
+		width: 100%;
+	}
 	.cmsmap {
 		max-width: 400px;
 	}
-	
-	/* @end */
-	
+	form {
+	    width: 80%;
+	}
+	.calendar-container{	    
+		width: 80%;
+	    height: 80%;
+}
 }
 
 @media (min-width:45em) {
@@ -1178,38 +1190,31 @@ textarea {
 	.mappanel {
 		width: 70%;	
 	}
+	.news {
+		padding-bottom: 80px;
+	}
 	.col {
-		max-width: 30%;
+		max-width: 35%;
 		margin-left: 3%;
 		margin-right: 0;
-		margin-top: 20px;
 		display: inline-block;
 		vertical-align: top;
 	}
+	.col 
 	.social {
 		margin-left: 75%;
 		margin-top: -40px;
 		margin-bottom: 0;
 	}
-	footer {
-		height: 100px;
+	.postpage {
+		height: 150px;
 	}
-	.address {
-		display: inline-block;
-		padding-top: 20px;
-		width: 70%;
-		margin-left: 5%;
-		text-align: left;
+	.col:nth-child(3) {
+		padding-top: 163px;
+		width: 20%;
 	}
-	.address p {
-		margin: 0;
-		padding: 0;
-	}
-	.address span {
-		display: inline;
-	}
-	small {
-		margin-top: 0;
+	form {
+	    width: 70%;
 	}
 	/* @group BLOG*/ 
 	article {
@@ -1246,6 +1251,7 @@ textarea {
 		margin-bottom: 32px;
 		padding-bottom: 0;
 	}
+	
 	}
 @media (min-width:59em)
 /* 826px/14px = 54.9em */
@@ -1264,13 +1270,48 @@ textarea {
 		width: 25%;
 		padding: 5px;
 	}
-	.social {
-		margin-left: 80%;
+	.news {
+		padding-left: 2%;
 	}
+	.postpage {
+		height: 120px;
+	}
+	.col:nth-child(3) {
+		padding-top: 132px;
+	}
+	
 	.vcard {
 		margin-top: -220px;
 		padding-left: 550px;
 		margin-bottom: 100px;
+	}
+	.address {
+		display: inline-block;
+		padding-top: 20px;
+		width: 70%;
+		margin-left: 5%;
+		text-align: left;
+	}
+	.address p {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.social {
+		margin-left: 80%;
+		margin-top: -30px;
+	}
+	small {
+		margin-top: -15px;
+	}
+	table.selfcater {
+		margin-top: -200px;
+	}
+	.calendar-container {	    
+		width: 60%;
+	}
+	.calendar-container iframe {	    
+	    height: 60%;
 	}
 /* @group BLOG */
 	.blog p em {
@@ -1285,6 +1326,9 @@ textarea {
 	}
 	.blog ul {
 		width: 105%;
+	}
+	article.post {
+		padding-top: 25px;
 	}
 	aside {
 		width: 18%;
@@ -1304,8 +1348,7 @@ textarea {
 
 /* @group FORM*/ 
 	form {
-		width: 40%;
-		margin-right: 5%;
+		width: 50%;
 		margin-bottom: 20px;
 	}
 	/* @end */
@@ -1318,10 +1361,9 @@ textarea {
 	}
 	aside.gallery {
 		position: absolute;
-		top: -40px;
+		top: 18px;
 		left: 80%;
 	}
-
 	/* @end */
 	/* @group PERCH */
 	.cmsmap {
@@ -1350,7 +1392,7 @@ textarea {
 		font-size: 1.8em;
 	}
 	h4 {
-		font-size: 1.3em;
+		font-size: 1.5em;
 	}
 	h5 {
 		font-size: 1.1em;
@@ -1365,6 +1407,7 @@ textarea {
 	.second-nav {
 		display: none;
 	}
+	
 	/* @end*/
 	
 	/* @group header*/ 
@@ -1460,16 +1503,25 @@ textarea {
 	.container { 
 		max-width: 1200px;
 	}
+	table.selfcater {
+		margin-top: -220px;
+	}
 	.news {
-		clear: both;
-		padding: 0 0 50px;
-		bottom: 0;
-		margin-bottom: -40px;
+		padding-left: 25px;
+		padding-bottom: 10px;
 	}
 	.news h3{
 		margin-left: 0;
 		padding-left: 5px;
 	}	
+	.news small {
+		display: inline-block;
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		font-size: .8em;
+	}
 	/* @end*/
 	/* @group BLOG*/ 
 	.blog.container h2{
@@ -1491,9 +1543,11 @@ textarea {
 	.slideshow-nav {
 		width: 85%;
 	}
+	aside.gallery {
+		top: 30px;
+	}
 		/* @end */
 	/* @group footer*/ 
-
 	footer {
 		display: none;
 	}
@@ -1503,10 +1557,13 @@ textarea {
 	.social {
 		display: none;
 	}
+
 }
 	@media (min-width:92em) 
 	/* 1288px/14px */ {
-	
+	table.selfcater {
+		margin-top: -280px;
+	}
 }
 /* @end */
 /* @group RETINA MEDIA QUERIES */

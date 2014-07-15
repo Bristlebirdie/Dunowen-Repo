@@ -16,7 +16,7 @@
 			<div class="main">		        
 			<?php include '../inc/address.inc.php'; ?>
 				<div class="blog container clearfix">
-					<h2>Dunowen House <span>Blog</span></h2>
+					<h2>Dunowen House <span>News</span></h2>
 					<br>
 					<p><em>A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</em></p>
 				    
