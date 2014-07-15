@@ -899,6 +899,10 @@ small a{
 .bloglist {
 	list-style: none;
 	margin-left: -40px;
+	padding-bottom: 50px;
+}
+.bloglist img {
+	max-height: 400px;
 }
 .entry-published {
 	color: #7a7a7a;
@@ -964,7 +968,9 @@ aside a:hover {
 	list-style: none;
 	display: inline;
 }
-
+.paging {
+	margin-top: 100px;
+}
 /* @end*/
 /* @group FORM*/
 form {

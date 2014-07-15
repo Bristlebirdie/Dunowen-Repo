@@ -1,3 +1,4 @@
+
 <?php 
 	include('../perch/runtime.php'); 
 	include '../inc/headblog.inc.php';
@@ -22,8 +23,8 @@
 	    		    		'filter'=>'special-offers',
 	    		    		'sort' => 'postDateTime',
 	    		    		'sort-order' => 'DESC',
-	    		    		'count' => 10,
-	    		    		'template' => 'section_list.html'
+	    		    		'count' => 5,
+	    		    		'template' => 'section.html'
 	    		    	]); ?>	
 				</div>
 				<?php include '../inc/news.inc.php'; ?>
