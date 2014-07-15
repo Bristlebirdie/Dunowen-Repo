@@ -1184,6 +1184,7 @@ textarea {
 		margin-right: 0;
 		margin-top: 20px;
 		display: inline-block;
+		vertical-align: top;
 	}
 	.social {
 		margin-left: 75%;
