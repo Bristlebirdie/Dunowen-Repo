@@ -1,0 +1,17 @@
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## project files to ignore
+i/*
+pdf/*
+f/*
+.sass-cache/*
+sass/removed/*
+dunowenhouse.ie.esproj/*
+error_log
+config.codekit
+perch/config/config.php
