@@ -3,7 +3,7 @@
 </perch:before>
     <li class="bloglist">
     	<article class="blog-list">
-	    	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50%" crop="true" />" alt="<perch:blog id="postTitle" />" /></perch:if>
+	    	<perch:blog label="Image" id="image" type="image" width="800" height="200" crop="true" density="2" output="tag" />
 		    <div class="blog-intro">
 		        <h4><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h4>
 		        <div class="description entry-summary">
