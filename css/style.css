@@ -942,10 +942,8 @@ article button a:hover {
 	color: #aa0061;
 }
 aside {
-	margin-left: 5%;
-	margin-right: 20px;
+	margin: 0 5% 40px;
 	color: #fff;
-	margin-bottom: 40px;
 }
 aside a {
 	color: #7a7a7a;
@@ -1351,7 +1349,7 @@ textarea {
 	}
 	aside {
 		width: 18%;
-		display: inline-block;
+		/*display: inline-block;*/
 		margin-top: 178px;
 		margin-left: 0%;
 		float: right;
@@ -1557,9 +1555,10 @@ textarea {
 		width: 60%;
 	}
 	aside {
-		width: 28%;
-		display: inline-block;
+		width: 22%;
+/*		display: inline-block;*/
 		margin-top: 183px;
+		float: right;
 	}
 	/* @end*/
 	/* @group GALLERY */
