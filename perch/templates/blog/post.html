@@ -1,19 +1,26 @@
-<article class="post">
-     	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50%" crop="true" label="Image" order="4" />" alt="<perch:blog id="postTitle" />" />
-     	</perch:if>
-	<div class="blog-post">
-		<h4><a href="<perch:blog id="postURL" type="hidden" />" rel="bookmark" class="entry-title">
-        <perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></a>
-        </h4>
-    	<p class="entry-published date">
-	        <perch:blog id="postDateTime" type="date" label="Date" time="true" format="%d %B %Y" divider-before="Meta information" /> 
-	    	<perch:if exists="authorGivenName"> by <perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" />
-	        </perch:if>
-    	</p>
-   		<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" textile="true" size="xxl autowidth" required="true" />
-	</div>
-</article>
-
+<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="50%" crop="true" label="Image" order="4" />" alt="<perch:blog id="postTitle" />" />
+</perch:if>
+<div class="blog-post">
+	<h4><a href="<perch:blog id="postURL" type="hidden" />" rel="bookmark" class="entry-title">
+    <perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></a>
+    </h4>
+	<p class="entry-published date">
+        <perch:blog id="postDateTime" type="date" label="Date" time="true" format="%d %B %Y" divider-before="Meta information" /> 
+    	<perch:if exists="authorGivenName"> by <perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" />
+        </perch:if>
+	</p>
+	<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" textile="true" size="xxl autowidth" required="true" />
+</div>
+<div class="sharing clearfix">
+	<p><span class="sharing-intro">Share this post &raquo;</span> 
+		<span class="sharing-icons">
+			<a class="facebook" href="http://www.facebook.com/sharer.php?u=http://dunowenhouse.ie<perch:blog id="postURL" />" target="_blank">facebook</a>
+			<a class="twitter" href="http://twitter.com/share?url=http://dunowenhouse.ie<perch:blog id="postURL" />" target="_blank">twitter</a>
+			<a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dunowenhouse.ie<perch:blog id="postURL" />&amp;title=<perch:blog id="postTitle" type="text" required="true" size="xl" />" target="_blank">linkedin</a>	
+			<a class="googleplus" href="https://plus.google.com/share?url=http://dunowenhouse.ie/<perch:blog id="postURL" />" target="_blank">googleplus</a>	
+		</span>
+	</p>		
+</div>
 <perch:blog id="excerpt" type="textarea" label="Excerpt" textile="true" order="3" suppress="true" size="s" />
 <perch:blog id="image" type="image" width="50" height="50" crop="true" suppress="true" />
 

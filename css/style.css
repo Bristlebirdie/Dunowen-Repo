@@ -818,27 +818,23 @@ footer p {
 	display: table;
 }
 .social a {
-	background: url(../img/icons.png) no-repeat;
+	background: url(../img/social-circle.png) no-repeat;
 	text-indent: -999em;
 	overflow: hidden;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
 }
 .social a.facebook {
-	background-position: -12px -15px;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
+	background-position: 0 -120px;
 }
 .social a.twitter {
-	background-position: -68px -15px;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
+	background-position: 0 -80px;
 }
 .social a.tripadvisor {
-	background-position: -122px -15px;
-	width: 45px;
-	height: 45px;
-	display: inline-block;
+	background-position: 0 -160px;
+	margin-right: 0;
 }
 small {
 	margin-top: 10px;
@@ -860,6 +856,11 @@ small a{
 .clearfix:before { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
 /* @end */
 /* @group MAP*/
 .map {
@@ -893,8 +894,6 @@ small a{
 .blog.container {
 	color: #fefeff;
 	font: 1.1em;
-	padding-left: 0;
-	margin-right: 5%;
 }
 .blog.container h2 {
 	position: static;
@@ -922,8 +921,7 @@ small a{
 }
 .blog article {
 	height: auto;
-	margin-top: 60px;
-	margin-bottom: 80px;
+	margin: 60px 0;
 }
 .blog article {
 	position: relative;
@@ -965,6 +963,7 @@ aside a:hover {
 	display: inline;
 }
 .meta {
+	clear: left;
 	margin-left: -40px;
 }
 .meta a {
@@ -978,11 +977,51 @@ aside a:hover {
 .meta li {
 	list-style: none;
 	display: inline;
+	/*padding: 0;*/
+}
+.meta li:before {
+	content: '/';
+	margin: 0 6px 0 4px;
+	color: #333;
 }
 .paging {
 	margin-top: 100px;
 }
 /* @end*/
+
+/* @group SHARING */
+
+.sharing-intro {
+	clear: left;
+	float: left;
+	margin-right: 10px;
+}
+.sharing a {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: -5px 10px 15px 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url(../img/social-circle.png) 0 0 no-repeat;
+}
+.sharing a.facebook {
+	background-position: 0 -120px;
+}
+.sharing a.twitter {
+	background-position: 0 -80px;	
+}
+.sharing a.linkedin {
+	background-position: 0 0;
+}
+.sharing a.googleplus {
+	background-position: 0 -40px;	
+}
+
+/* @end */
+
 /* @group FORM*/
 form {
 	width: 90%;
@@ -1260,9 +1299,9 @@ textarea {
 		padding-right: 25px;
 		padding-bottom: 20px;
 	}
-	.blog-post h4 {
+/*	.blog-post h4 {
 		margin-top: 0;
-	}
+	}*/
 	.blog h3 {
 		padding-top: 48px;
 		margin-bottom: 32px;
@@ -1270,9 +1309,9 @@ textarea {
 	}
 	
 	}
-@media (min-width:59em)
+@media (min-width:59em) {
 /* 826px/14px = 54.9em */
-/* top menu appears.*/ {
+/* top menu appears.*/ 
 	h1 {
 		width: 16%;
 		float: left;
@@ -1334,12 +1373,9 @@ textarea {
 	.blog p em {
 		position: absolute;
 	}
-	.blog {
-		width: 68%;
-		/*float: left;*/
-		display: inline-block;
-		margin-right: -20px;
-		padding-right: 0;
+	.blog.container {
+		width: 67%;
+		float: left;
 	}
 	.blog ul {
 		width: 105%;
@@ -1348,12 +1384,9 @@ textarea {
 		padding-top: 25px;
 	}
 	aside {
+		float: left;
 		width: 18%;
-		/*display: inline-block;*/
-		margin-top: 178px;
-		margin-left: 0%;
-		float: right;
-		clear: both;
+		margin: 178px 5% 40px 0%;
 	}
 	.blog-post {
 		margin-top: 80px;
@@ -1458,7 +1491,26 @@ textarea {
 		height: 60px;
 		margin-left: -15px;
 	}
-	.follow a{
+	.follow a {
+		background: url(../img/social-circle.png) no-repeat;
+		text-indent: -999em;
+		opacity: 0.63;
+		overflow: hidden;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+	}
+	.follow a.facebook {
+		background-position: 0 -120px;
+	}
+	.follow a.twitter {
+		background-position: 0 -80px;
+	}
+	.follow a.tripadvisor {
+		background-position: 0 -160px;
+		margin-left: 8px;
+	}
+/*	.follow a{
 		background: url(../img/icons.png) no-repeat;
 		text-indent: -999em;
 		opacity: 0.63;
@@ -1481,7 +1533,7 @@ textarea {
 		width: 40px;
 		height: 40px;
 		display: inline-block;
-	}	
+	}*/	
 	.intouch {
 		text-transform: lowercase;
 		margin-top: 50px;
@@ -1555,9 +1607,9 @@ textarea {
 		width: 60%;
 	}
 	aside {
-		width: 22%;
+		/*width: 19%;*/
 /*		display: inline-block;*/
-		margin-top: 183px;
+		margin: 183px 5% 40px 0;
 		float: right;
 	}
 	/* @end*/
@@ -1592,19 +1644,23 @@ textarea {
 }
 /* @end */
 /* @group RETINA MEDIA QUERIES */
-/*	@media 
+	@media 
 	only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (   -moz-min-device-pixel-ratio: 2),
 	only screen and (     -o-min-device-pixel-ratio: 2/1),
 	only screen and (        min-device-pixel-ratio: 2),
 	only screen and (                min-resolution: 192dpi),
 	only screen and (                min-resolution: 2dppx) { 
-    h1 {
+/*    h1 {
     	background-image: url(../img/dh-logo@2x.png); 
 	    /* actual image size = 280px by 200px *!/
         background-size: 120px 86px;
+       }*/
+       .follow a, .sharing a, .social a {
+       	background-image: url(../img/social-circle@2x.png); 
+       	background-size: 40px 200px;
        }
-}*/
+}
 
 
 /* @end */
