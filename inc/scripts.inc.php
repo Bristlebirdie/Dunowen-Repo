@@ -1,8 +1,10 @@
-<!--FLEXSLIDER -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
+$(window).load(function() {
+//	if ($(window).width() > 480) {
+		$.getScript('js/jquery.flexslider.js', function(data, textStatus){
+		  		$('.flexslider').flexslider();
+		});
+//	}
+});
 </script>

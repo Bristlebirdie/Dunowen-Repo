@@ -17,7 +17,6 @@
 			<?php include '../inc/address.inc.php'; ?>
 				<div class="blog container clearfix">
 					<h2>Dunowen House <span>News</span></h2>
-					<br>
 					<p><em>A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</em></p>
 				    
 				    <?php perch_blog_section(perch_get('section')); ?>

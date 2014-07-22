@@ -13,7 +13,7 @@
 	        <div class="main">		        
 		    <?php include 'inc/address.inc.php'; ?>
 				<div class="gallery">
-					<?php perch_content('Slideshow'); ?>	
+       			<?php perch_content('Slideshow'); ?>				
 				</div><!--end gallery-->	
 	        	<div class="container">
 			        <?php perch_content('Content'); ?>
