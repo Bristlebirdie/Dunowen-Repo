@@ -1,6 +1,4 @@
-<perch:before>
-<ul class="hfeed listing">
-</perch:before>
+<perch:before><ul class="hfeed listing"></perch:before>
     <li class="bloglist">
     	<article>
 	    	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="500" height="270" crop="true" density="2" quality="25" />" alt="<perch:blog id="postTitle" />" /></perch:if>
@@ -13,18 +11,17 @@
 		    </div>
     	</article>
     </li>
-<perch:after>
-    
-</ul>
-    <perch:if exists="paging">
-        <div class="paging">
-            Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
-            <perch:if exists="not_first_page">
-                <a href="<perch:blog id="prev_url" encode="false" />">Previous</a>
-            </perch:if>
-            <perch:if exists="not_last_page">
-                <a href="<perch:blog id="next_url" encode="false" />">Next</a>
-            </perch:if>
-        </div>
-    </perch:if>
+<perch:after></ul>
+
+<perch:if exists="paging">
+    <div class="paging">
+        Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" />
+        <perch:if exists="not_first_page">
+            <a class="prev" href="<perch:blog id="prev_url" encode="false" />">Previous</a>
+        </perch:if>
+        <perch:if exists="not_last_page">
+            <a class="next" href="<perch:blog id="next_url" encode="false" />">Next</a>
+        </perch:if>
+    </div>
+</perch:if>
 </perch:after>

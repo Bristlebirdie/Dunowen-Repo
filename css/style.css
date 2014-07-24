@@ -923,6 +923,7 @@ small a{
 .bloglist {
 	list-style: none;
 	padding-bottom: 0px;
+	clear: left;
 }
 .bloglist img {
 	max-height: 400px;
@@ -1001,6 +1002,15 @@ aside a:hover {
 }
 .paging {
 	margin-top: 100px;
+}
+.paging a {
+	padding-left: 15px;
+}
+a.prev:before {
+	content: '< ';	
+} 
+a.next:after {
+	content: ' >';	
 }
 /* @end*/
 
