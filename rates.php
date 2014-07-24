@@ -19,16 +19,16 @@
 	        		<?php perch_content('Page Introduction'); ?>
 	        		
 	        		<div class="calendar-container">
-	        		<iframe src="https://www.google.com/calendar/embed?height=350&amp;wkst=7&amp;bgcolor=%23c0c0c0&amp;src=dunowenguesthouse%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FDublin" style=" border-width:0 " width="500" height="350" frameborder="0" scrolling="no"></iframe>
+	        		<iframe src="https://www.google.com/calendar/embed?src=dunowenguesthouse%40gmail.com&ctz=Europe/Dublin" style="border: 0" width="100%" height="350" frameborder="0" scrolling="no"></iframe>
 	        		</div>
-	        		<?php perch_content('Self Catering Table'); ?>
-			        <?php perch_content('Heading'); ?>
-			        <?php
-			        perch_content_custom('Products', array(
-			         'template'   => 'bandb.html',
-			         'multiple'    => true
-			        ));
-			        ?>
+					<?php
+						perch_content('Self Catering Table');			        
+					    perch_content('Heading');
+					    perch_content_custom('Products', array(
+					     'template'   => 'bandb.html',
+					     'multiple'    => true
+					    ));
+					?>
 			        <?php perch_content('Additional Content'); ?>
 				</div><!--end container-->
 				<?php include 'inc/news.inc.php'; ?>

@@ -8,6 +8,6 @@
     <div class="intouch">
         <h6>Get in Touch</h6>
         <p><a href="tel:+353238869099">+353 23 886 9099</a><br>
-        <a href="info@dunowenhouse.ie">info@dunowenhouse.ie</a></p>
+        <a href='m&#97;ilto&#58;in%66&#111;&#64;d&#37;&#55;5nowen&#104;&#111;&#117;%7&#51;e&#46;&#105;&#37;65'>in&#102;o&#64;dun&#111;wenhouse&#46;ie</a></p>
     </div><!--end intouch-->
 </div>

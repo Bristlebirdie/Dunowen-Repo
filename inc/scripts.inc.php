@@ -3,7 +3,12 @@
 $(window).load(function() {
 //	if ($(window).width() > 480) {
 		$.getScript('js/jquery.flexslider.js', function(data, textStatus){
-		  		$('.flexslider').flexslider();
+		  		$('.flexslider').flexslider({
+		  		  animation: "fade",
+		  		  slideshow: true,
+		  		  slideshowSpeed: 5000,
+		  		  animationSpeed: 800
+		  		});
 		});
 //	}
 });

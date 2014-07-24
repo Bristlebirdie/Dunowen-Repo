@@ -26,9 +26,8 @@
 			<div class="main">		        
 			<?php include '../inc/address.inc.php'; ?>
 				<div class="blog container clearfix">				
-<!--					<h2><?php echo $title ?></h2>-->
 					<h2>Dunowen House <span>News post</span></h2>
-					<p><em>A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</em></p>
+					<p class="blog-tagline">A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</p>
 					<article class="post">
 						<?php perch_blog_post(perch_get('s')); ?>
 				    	<div class="meta">
