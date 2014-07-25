@@ -15,6 +15,7 @@
     <?php perch_blog_categories(array(
                     'section'=>'posts',
                     'filter'=>'posts',
+                    'template'=>'post_category_link.html'
                 ));
     ?>
     
@@ -22,6 +23,7 @@
     <?php perch_blog_tags(array(
                     'section'=>'posts',
                     'filter'=>'posts',
+                    'template'=>'post_tag_link.html'
                 ));
     ?>
     

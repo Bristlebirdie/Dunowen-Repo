@@ -18,11 +18,10 @@
 				<div class="blog container clearfix">
 					<h2>Dunowen House <span>News</span></h2>
 					<p class="blog-tagline">A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</p>
-				    <?php perch_blog_section(perch_get('section')); ?>
+				    <?php //perch_blog_section(perch_get('section')); ?>
 				        	<?php perch_blog_custom([
 				        		'count'=>3,
 				        		'section'=>'posts',
-				        		'filter'=>'posts',
 				        		'sort' => 'postDateTime',
 				        		'sort-order' => 'DESC',
 				        		'template' => 'post_in_list.html'

@@ -1004,13 +1004,17 @@ aside a:hover {
 	margin-top: 100px;
 }
 .paging a {
-	padding-left: 15px;
+	padding: 0 15px;
 }
 a.prev:before {
-	content: '< ';	
+	content: '\00ab ';
+	padding-right: 5px;
+	font-size: 1.3em;	
 } 
 a.next:after {
-	content: ' >';	
+	content: ' \00bb';	
+	padding-left: 5px;
+	font-size: 1.3em;	
 }
 /* @end*/
 
