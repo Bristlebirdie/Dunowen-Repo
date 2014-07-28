@@ -596,6 +596,11 @@ button a {
 	color: #161326;
 	margin-top: 2px;
 }
+.blog-post button {
+	float: right;
+	margin: 20px 0 20px 40px;	
+}
+
 /* @end*/
 /* @group main content*/ 
 .wrapper {
@@ -750,7 +755,7 @@ tr {
 	margin-right: 10px;
 	margin-top: 15px;
 	font-size: .9em;
-	margin-left: -35px;
+	/*margin-left: -35px;*/
 }
 .news button a:hover {
 	color: #aa0061;
@@ -770,7 +775,7 @@ tr {
 	margin-left: 0px;
 }
 .postpage {
-	margin-left: -40px;
+	/*margin-left: -40px;*/
 }
 .postpage p {
 	height: 70px;
@@ -862,6 +867,9 @@ small a{
 	white-space: nowrap;
 	overflow: hidden;
 }
+.upr {
+	text-transform: uppercase;
+}
 /* @end */
 /* @group MAP*/
 .map {
@@ -931,6 +939,16 @@ small a{
 .entry-published {
 	color: #7a7a7a;
 }
+.entry-published a:before {
+	content: '\21D0';
+	padding-right: 5px;
+}
+.entry-published a:after {
+	content: '/';
+	margin: 0 7px 0 10px;
+	color: #333;
+}
+
 .blog article {
 	/*height: auto;*/
 	margin: 30px 0;
@@ -980,7 +998,14 @@ aside a:hover {
 }
 .meta {
 	clear: left;
-	margin-left: -40px;
+	/*margin-left: -40px;*/
+}
+.meta h5, .meta ul {
+	display: inline;
+	padding-left: 0;
+}
+.meta ul {
+	padding: 0 20px 0 10px;
 }
 .meta a {
 	color: #7a7a7a;
@@ -1298,8 +1323,8 @@ textarea {
 	}
 	.col {
 		max-width: 35%;
-		margin-left: 3%;
-		margin-right: 0;
+		margin-left: 0;
+		margin-right: 3%;
 		display: inline-block;
 		vertical-align: top;
 	}
@@ -1648,6 +1673,9 @@ textarea {
 /*		display: inline-block;*/
 		margin: 166px 5% 40px 0;
 		float: right;
+	}
+	.news {
+		padding-left: 5%;
 	}
 	/* @end*/
 	/* @group GALLERY */

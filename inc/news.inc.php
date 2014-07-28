@@ -2,7 +2,7 @@
     
     <div class="col">
        <h4>Latest News</h4>
-			<?php perch_blog_section(perch_get('section')); ?>
+			<?php //perch_blog_section(perch_get('section')); ?>
 
 		     	<?php perch_blog_custom([
 		     		'section'=>'posts',
@@ -16,7 +16,7 @@
     
     <div class="col">
     <h4>Special Offers</h4>
-    	<?php perch_blog_section(perch_get('section')); ?>
+    	<?php //perch_blog_section(perch_get('section')); ?>
     	
     	    	<?php perch_blog_custom([
     	    		'section'=>'special-offers',

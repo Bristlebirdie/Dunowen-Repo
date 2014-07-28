@@ -1,13 +1,14 @@
 <h2><perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></h2>
-<p class="entry-published date"><a class="upr" href="news/">Back to News</a> <perch:blog id="postDateTime" type="date" label="Date" time="true" format="%d %B %Y" divider-before="Meta information" /> <perch:if exists="authorGivenName"> by <perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" /></perch:if></p>
+<p class="entry-published date"><a class="upr" href="special-offers/">Back to Special Offers</a> <perch:blog id="postDateTime" type="date" label="Date" time="true" format="%d %B %Y" divider-before="Meta information" /></p>
 <article class="post">
 	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="1340" height="725" crop="true" label="Main image" quality="65" order="4" />" alt="<perch:if exists="post-image-alt"><perch:blog id="post-image-alt" type="text" label="Alt text" /><perch:else /><perch:blog id="postTitle" /></perch:if>" />
 	</perch:if>
 	<div class="blog-post">
+		<button><a href="contact/?subject=Special offer enquiry - <perch:blog id="postTitle" type="text" />" rel="bookmark" class="entry-title"><perch:blog id="Read More" />Book this Offer &raquo;</a></button>
 		<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" textile="true" size="xxl autowidth" required="true" />
 	</div>
 	<div class="sharing clearfix">
-		<p><span class="sharing-intro">Share this post &raquo;</span> 
+		<p><span class="sharing-intro">Share this offer &raquo;</span> 
 			<span class="sharing-icons">
 				<a class="facebook" href="http://www.facebook.com/sharer.php?u=http://dunowenhouse.ie<perch:blog id="postURL" />" target="_blank">facebook</a>
 				<a class="twitter" href="http://twitter.com/share?url=http://dunowenhouse.ie<perch:blog id="postURL" />" target="_blank">twitter</a>
@@ -21,6 +22,6 @@
 <perch:blog id="image" type="image" width="640" height="360" crop="true" suppress="true" density="2" quality="25" />
 <perch:blog id="image" type="image" width="200" height="200" crop="true" suppress="true" density="2" quality="25" />
 <perch:help>
-    <p>To display news / blog posts correctly, you must select 'default' from the 'Post Type' drop down and 'Posts' from the 'Section' drop down menus at the bottom of the page.</p>
+    <p>To display Special offers correctly, you must select 'Special offer' from the 'Post Type' drop down and 'Special Offers' from the 'Section' drop down menus at the bottom of the page.</p>
 </perch:help>
 
