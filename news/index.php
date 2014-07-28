@@ -1,10 +1,7 @@
 <?php 
 	include('../perch/runtime.php'); 
 	include '../inc/head.inc.php';
-	?>
-	<title><?php perch_blog_post_field(perch_get('s'), 'postTitle'); ?> Blog Post</title>   
-	</head>
-	
+?>
 <body>
 <?php include '../inc/browsehappy.inc.php'; ?>
 	<div class="wrapper">

@@ -3,7 +3,8 @@
 	include('../inc/functions.inc.php');
 // FACEBOOK OPEN GRAPH TAGS
 	$title = perch_blog_post_field(perch_get('s'), 'postTitle', true);
-	$section = perch_blog_post_field(perch_get('s'), 'section', true);
+//	$section = perch_blog_section(perch_get('s'), true);
+//	$section = perch_blog_post_field(perch_get('s'), 'sectionSlug', true);
 // $description should be set to SEO description attribute.
 	$description = strip_tags(perch_blog_post_field(perch_get('s'), 'excerpt', true));
 //	$description = "A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life";
@@ -26,24 +27,28 @@
 			</header>
 			<div class="main">		        
 			<?php include '../inc/address.inc.php'; ?>
-				<div class="blog container clearfix">				
-					<!--<h2><?php echo $title; ?></h2>-->
-<!--					<h2>Dunowen House <span>News post</span></h2>
-					<p class="blog-tagline">A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life.</p>-->
-<!--					<article class="post">-->
-						<?php perch_blog_post(perch_get('s')); ?>
+				<div class="blog container clearfix">	
 
-					<!--</article>-->
+						<?php
+//						 echo 'section - '.$section;			
+						 perch_blog_post(perch_get('s')); ?>
 					<div class="meta">
 					    <?php 
-					    	perch_blog_post_categories(perch_get('s')); perch_blog_post_tags(perch_get('s')); ?>
+					    	perch_blog_post_categories(perch_get('s'));
+					    	perch_blog_post_tags(perch_get('s')); 
+					    ?>
 					</div>
-				    	<?php// perch_blog_post_comments(perch_get('s')); ?>
-				    	<?php// perch_blog_post_comment_form(perch_get('s')); ?>
+				    	<?php
+				    	// perch_blog_post_comments(perch_get('s')); 
+				    	// perch_blog_post_comment_form(perch_get('s'));
+				    	?>
 				</div><!--end container-->
-				
-				<?php include '../inc/blog-sidebar.inc.php'; ?>
-				<?php include '../inc/news.inc.php'; ?>
+				<?php 
+//					if ($section=='posts') { 
+						include '../inc/blog-sidebar.inc.php'; 
+//					}
+					include '../inc/news.inc.php'; 
+				?>
 			</div> <!--end main-->
 		</div> <!--end inner-wrap-->
 		<?php include '../inc/footer.inc.php'; ?>	  	   

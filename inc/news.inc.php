@@ -24,7 +24,7 @@
     	    		'sort' => 'postDateTime',
     	    		'sort-order' => 'DESC',
     	    		'count' => 1,
-    	    		'template' => 'post_for_news.html'
+    	    		'template' => 'post_for_news_special_offers.html'
     	    	]); ?>	
     </div><!--end col-->
     

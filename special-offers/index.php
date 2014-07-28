@@ -1,9 +1,7 @@
 <?php 
 	include('../perch/runtime.php'); 
-	include '../inc/headblog.inc.php';
-	?>
-	 <title>Special Offers</title>   
-	</head>
+	include '../inc/head.inc.php';
+?>
 <body>
 <?php include '../inc/browsehappy.inc.php'; ?>
 	<div class="wrapper">

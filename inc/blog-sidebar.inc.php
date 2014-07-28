@@ -1,5 +1,5 @@
 <aside class="sidebar">
-<h4>Archive</h4>
+<h4>News Archive</h4>
 	<!--  By most recent posts -->
     <?php  
     perch_blog_custom(array(
