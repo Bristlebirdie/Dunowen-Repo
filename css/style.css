@@ -1161,9 +1161,7 @@ textarea {
 /* @end */
 
 /* @group GALLERY */
-.primary-content .glist,
-.sidebar .glist,
-.glist {
+.primary-content .glist, .sidebar .glist, .glist {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1195,14 +1193,22 @@ textarea {
 	width: 100px;
 	margin: 0 10px 10px 0;
 }
-
-.slideshow-nav li {
-	float: left;
-	padding: 5px 0 5px 5px;
-	margin-bottom: 20px;
-	margin-top: 10px;
+.slideshow.glist {
+	margin-top: 20px;
 }
 
+.slideshow.glist img {
+	width: 100%;
+	height: auto;
+}
+.slideshow-nav li {
+	float: left;
+	padding: 0;
+	margin: 0 2px -1px 0;
+}
+.slideshow-nav li:first-of-type {
+	margin-left: 0;
+}
 .slideshow-nav li:first-child {
 	padding-left: 0;
 }
@@ -1309,6 +1315,9 @@ textarea {
 	}
 	.sharing a {
 		margin-right: 15px;
+	}
+	.slideshow.glist img {
+		width: 100%;
 	}
 }
 

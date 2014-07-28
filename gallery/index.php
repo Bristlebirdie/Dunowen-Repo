@@ -13,10 +13,9 @@
 	        <div class="main">		        
 		    <?php include '../inc/address.inc.php'; ?>	
 	        	<div class="gallery container">
-	        	<h2>Dunowen House <span>Gallery</span></h2>
 				<div class="primary-content">
 				<?php 
-					if(!perch_get('s')) { $default_album = 'maias-first-photos'; } 
+					if(!perch_get('s')) { $default_album = 'photo-gallery'; } 
 					else { $default_album = perch_get('s'); }
 					
 					// Output the large images
