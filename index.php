@@ -14,7 +14,7 @@
 	        <div class="main">		        
 		    <?php include 'inc/address.inc.php'; ?>
 				<div class="gallery">
-					<h2>You don't just stay at Dunowen House, <br><span>you experience it.</span></h2>
+					<h2>You don't just stay at Dunowen House, <span>you experience it.</span></h2>
 					<?php perch_content('Slideshow'); ?>	
 				</div><!--end gallery-->	
 	        	<div class="container">

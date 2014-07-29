@@ -1,6 +1,7 @@
 /* @override 
 	http://localhost/dunowenhouse.ie/site/style.css
-	http://dunowenhouse/css/style.css */
+	http://dunowenhouse/css/style.css
+	http://adams-macbook-pro.local:5757/css/style.css */
 
 
 /* -----------------------------------------------
@@ -475,13 +476,14 @@ h1 span {
 	font-size: 0.8em;
 }
 h2 {
-	margin: 60px 5% 0;
+	margin: 40px 5% 0;
+	/*margin: 60px 5% 0;*/
 	font-size: 1.4em;
 	font-weight: 300;
 	color: #fefeff;
-	width: 100%; 
+	width: 90%; 
 	position: absolute; 
-	top: 130px;
+	/*top: 130px;*/
 	z-index: 5;
 }
 h2 span {
@@ -658,8 +660,8 @@ button a {
 }
 .calendar-container {
     position: relative;
-    padding-bottom: 75%;
-    height: 0;
+    /*padding-bottom: 75%;*/
+    height: 350px;
     overflow: hidden;
 }
 .calendar-container iframe {
@@ -682,11 +684,24 @@ ul.bandb li em {
 }
 .selfcater {
 	margin-top: 40px;
+	width: 100%;
 }
 .selfcater table, th, td {
    border: 1px solid #494747;
 }
-table {
+.selfcater td, .selfcater th {
+	padding: 5px;
+	text-align: center;
+}
+.selfcater td:nth-of-type(5n+1) {
+	text-align: left;
+}
+.selfcater th {
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #999;
+}
+/*table {
 	width: 80%;
 }
 th {
@@ -694,7 +709,7 @@ th {
 }
 tr {
 	height: 40px;
-}
+}*/
 /* @end*/ 
 /* @group offers*/ 
 .offers.container {
@@ -724,50 +739,56 @@ tr {
 
 /* @end STYLES*/
 
-/* @group news*/ 
-.news {
+/* @group footer columns */ 
+.f-cols {
 	color: #fefeff;
 	background-color: #1e1a34;
 	width: 100%;
+	padding: 0 5% 15px;
 	/*padding-bottom: 60px;*/
 	border-top: 1px dashed #494747;
+	border-bottom: 1px dashed #494747;
 }
-.news li {
+.f-cols li {
 	list-style: none;
 }
-.news h5 a {
+.f-cols h4 {
+	margin: 20px 0 0;
+}
+.f-cols h5 a {
 	text-decoration: none;
 	color: #fff;
 }
-.news h5 a:hover {
+.f-cols h5 a:hover {
 	color: #aa0061;
 }
-.news p{
+.f-cols p{
 	margin-bottom: 10px;
 	font-size: .9em;
 }
-.news img {
+.f-cols img {
 	float: left;
-	padding: 5px 15px 5px 5px;
+	margin: 0 15px 15px 0;
 	width: 100px;
 }
-.news button {
-	margin-right: 10px;
-	margin-top: 15px;
+.f-cols button {
+	/*float: left;*/
+	clear: left;
+	margin: 15px 10px 0 0;
 	font-size: .9em;
-	/*margin-left: -35px;*/
 }
-.news button a:hover {
+.f-cols button a:hover {
 	color: #aa0061;
 }
 .col {
-	max-width: 70%;
+	/*max-width: 70%;*/
 	word-wrap:break-word;
-	margin-left: 10%;
-	margin-right: 10%;
-	height: 200px;
+	padding-bottom: 10px;
+	/*margin-left: 0%;*/
+	/*margin-right: 10%;*/
+	/*height: 200px;*/
 }
-.col:nth-child(3) {
+/*.col:nth-child(3) {
 	padding-top: 40px;
 	padding-left: 5px;
 }
@@ -775,12 +796,12 @@ tr {
 	margin-left: 0px;
 }
 .postpage {
-	/*margin-left: -40px;*/
+	margin-left: -40px;
 }
 .postpage p {
 	height: 70px;
-}
-.news small {
+}*/
+.f-cols small {
 	display: none;
 }
 /* @end*/
@@ -1276,19 +1297,22 @@ textarea {
 	}
 	h2 {
 		font-size: 1.8em;
-		font-weight: 300;
+		top: 130px;
+	}
+	h2 span {
+		display: block;
 	}
 	.container-pic img {
 		width: 30%;
 		padding: 5px;
 		margin-left: 20px;
 	}
-	.news img {
+	.f-cols img {
 		float: left;
-		padding: 5px 20px 25px 5px;
+		/*padding: 5px 20px 25px 5px;*/
 	}
 	.col {
-		width: 60%;
+		width: 80%;
 	}
 	.address span {
 		display: inline;
@@ -1304,8 +1328,8 @@ textarea {
 	    width: 80%;
 	}
 	.calendar-container{	    
-		width: 80%;
-	    height: 80%;
+/*		width: 80%;
+	    height: 80%;*/
 	}
 	.sharing {
 		margin-left: 50px
@@ -1327,31 +1351,40 @@ textarea {
 	.mappanel {
 		width: 70%;	
 	}
-	.news {
-		padding-bottom: 80px;
+	.f-cols {
+		/*padding: 40px;*/
+		padding: 5px 5% 15px;
 	}
 	.col {
-		max-width: 35%;
+		max-width: 31%;
 		margin-left: 0;
 		margin-right: 3%;
 		display: inline-block;
+		/*float: left;*/
 		vertical-align: top;
 	}
-	.col 
-	.social {
+/*	.col .social {
 		margin-left: 75%;
 		margin-top: -40px;
 		margin-bottom: 0;
 	}
 	.postpage {
 		height: 150px;
-	}
+	}*/
 	.col:nth-child(3) {
-		padding-top: 163px;
-		width: 20%;
+/*		padding-top: 163px;
+		width: 20%;*/
+		margin-right: 0;
 	}
 	form {
 	    width: 70%;
+	}
+	.container { 
+		max-width: 740px;
+		/*width: 60%;*/
+	}
+	.gallery.container {
+		max-width: 1200px;
 	}
 	/* @group BLOG*/ 
 	.bloglist img {
@@ -1399,7 +1432,7 @@ textarea {
 		width: 25%;
 		padding: 5px;
 	}
-	.news {
+/*	.f-cols {
 		padding-left: 2%;
 	}
 	.postpage {
@@ -1407,7 +1440,7 @@ textarea {
 	}
 	.col:nth-child(3) {
 		padding-top: 132px;
-	}
+	}*/
 	
 	.vcard {
 		margin-top: -220px;
@@ -1433,15 +1466,7 @@ textarea {
 	small {
 		margin-top: -15px;
 	}
-	table.selfcater {
-		margin-top: -200px;
-	}
-	.calendar-container {	    
-		width: 60%;
-	}
-	.calendar-container iframe {	    
-	    height: 60%;
-	}
+
 /* @group BLOG */
 	.blog p em {
 		position: absolute;
@@ -1490,7 +1515,7 @@ textarea {
 		margin-left: 0;
 		max-width: 500px;
 	}
-	.news {
+	.f-cols {
 		clear: both;
 	}
 	
@@ -1647,21 +1672,23 @@ textarea {
 		position: absolute;
 		margin-left: 19%;
 	}
-	.container { 
-		max-width: 1200px;
+	.selfcater {
+		/*width: 75%;*/
 	}
-	table.selfcater {
-		margin-top: -220px;
+	.calendar-container {	    
+		/*width: 75%;*/
+	    height: 480px;
 	}
-	.news {
+	
+	.f-cols {
 		padding-left: 25px;
 		padding-bottom: 10px;
 	}
-	.news h3{
+	.f-cols h3{
 		margin-left: 0;
 		padding-left: 5px;
 	}	
-	.news small {
+	.f-cols small {
 		display: inline-block;
 		text-align: center;
 		margin-top: 70px;
@@ -1683,7 +1710,7 @@ textarea {
 		margin: 166px 5% 40px 0;
 		float: right;
 	}
-	.news {
+	.f-cols {
 		padding-left: 5%;
 	}
 	/* @end*/
@@ -1713,7 +1740,7 @@ textarea {
 	@media (min-width:92em) 
 	/* 1288px/14px */ {
 	table.selfcater {
-		margin-top: -280px;
+		/*margin-top: -280px;*/
 	}
 }
 /* @end */

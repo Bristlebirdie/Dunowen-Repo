@@ -4,7 +4,8 @@
 // FACEBOOK OPEN GRAPH TAGS
 	$title = perch_blog_post_field(perch_get('s'), 'postTitle', true);
 //	$section = perch_blog_section(perch_get('s'), true);
-//	$section = perch_blog_post_field(perch_get('s'), 'sectionSlug', true);
+	$sectionID = perch_blog_post_field(perch_get('s'), 'sectionID', true);
+
 // $description should be set to SEO description attribute.
 	$description = strip_tags(perch_blog_post_field(perch_get('s'), 'excerpt', true));
 //	$description = "A journal about life at Dunowen House, West Cork. Exploring, entertaining, cooking, eating, making the most of this idyllic life";
@@ -28,10 +29,7 @@
 			<div class="main">		        
 			<?php include '../inc/address.inc.php'; ?>
 				<div class="blog container clearfix">	
-
-						<?php
-//						 echo 'section - '.$section;			
-						 perch_blog_post(perch_get('s')); ?>
+					<?php perch_blog_post(perch_get('s')); ?>
 					<div class="meta">
 					    <?php 
 					    	perch_blog_post_categories(perch_get('s'));
@@ -43,10 +41,8 @@
 				    	// perch_blog_post_comment_form(perch_get('s'));
 				    	?>
 				</div><!--end container-->
-				<?php 
-//					if ($section=='posts') { 
-						include '../inc/blog-sidebar.inc.php'; 
-//					}
+				<?php // only output sidebar on posts section
+					if ($sectionID=='1') { include '../inc/blog-sidebar.inc.php'; }
 					include '../inc/news.inc.php'; 
 				?>
 			</div> <!--end main-->
