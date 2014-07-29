@@ -248,6 +248,7 @@ AddDefaultCharset utf-8
 	RewriteRule ^news/archive/([0-9]+)/$ news/archive.php?year=$1 [L]
 	RewriteRule ^news/([a-zA-Z0-9-/]+)$ news/post.php?s=$1 [L]
 	RewriteRule ^special-offers/([a-zA-Z0-9-/]+)$ news/post.php?s=$1 [L]
+#	RewriteRule ^welcome/$ welcome/index.php [L]
 #	RewriteRule ^shop/([a-zA-Z0-9-/]+)/$ shop/product.php?s=$1 [L]
 
     

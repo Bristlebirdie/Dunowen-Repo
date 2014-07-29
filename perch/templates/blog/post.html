@@ -1,7 +1,7 @@
 <h2><perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" /></h2>
 <p class="entry-published date"><a class="upr" href="/news/">Back to News</a> <perch:blog id="postDateTime" type="date" label="Date" time="true" format="%d %B %Y" divider-before="Meta information" /> <perch:if exists="authorGivenName"> by <perch:blog id="authorGivenName" type="hidden" /> <perch:blog id="authorFamilyName" type="hidden" /></perch:if></p>
-<article class="post">
-	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="1340" height="725" crop="true" label="Main image" quality="65" order="4" />" alt="<perch:if exists="post-image-alt"><perch:blog id="post-image-alt" type="text" label="Alt text" /><perch:else /><perch:blog id="postTitle" /></perch:if>" />
+<article
+	<perch:if exists="image"><img src="<perch:blog id="image" type="image" width="1340" height="725" crop="true" label="Main image" quality="65" order="4" />" class="post-image" alt="<perch:if exists="post-image-alt"><perch:blog id="post-image-alt" type="text" label="Alt text" /><perch:else /><perch:blog id="postTitle" /></perch:if>" />
 	</perch:if>
 	<div class="blog-post">
 		<perch:blog id="postDescHTML" type="textarea" label="Post" order="2" editor="markitup" textile="true" size="xxl autowidth" required="true" />
