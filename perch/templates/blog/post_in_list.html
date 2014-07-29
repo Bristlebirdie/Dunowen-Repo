@@ -1,7 +1,7 @@
 <perch:before><ul class="hfeed listing"></perch:before>
     <li class="bloglist">
     	<article>
-	    	<perch:if exists="image"><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><img src="<perch:blog id="image" type="image" width="640" height="360" crop="true" density="2" quality="25" />" alt="<perch:blog id="postTitle" />" /></a><perch:else /><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><img src="img/details-22-th@2x.jpg" alt="<perch:blog id="postTitle" />" /></a></perch:if>
+	    	<perch:if exists="image"><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><img src="<perch:blog id="image" type="image" width="640" height="360" crop="true" density="2" quality="25" />" alt="<perch:blog id="postTitle" />" /></a><perch:else /><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><img src="/img/details-22-th@2x.jpg" alt="<perch:blog id="postTitle" />" /></a></perch:if>
 		    <div class="blog-intro">
 		        <h4><a href="<perch:blog id="postURL" />" rel="bookmark" class="entry-title"><perch:blog id="postTitle" /></a></h4>
 		        <p class="entry-published date">Posted on <perch:blog id="postDateTime" format="l jS F Y" /> by <perch:blog id="authorGivenName" type="text" /> <perch:blog id="authorFamilyName" type="text" /></p>

@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8"/>
 	<title><?php perch_pages_title(); ?></title>
-	<base href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/"> 
+	<!--<base href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">

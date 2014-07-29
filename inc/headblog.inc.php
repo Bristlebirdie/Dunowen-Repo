@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8"/>
 	<title><?php perch_blog_post_field(perch_get('s'), 'postTitle'); ?> | Dunowen House Blog</title>   
-    <base href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/"> 
+<!--    <base href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="<?php echo $description; ?>">
     <meta name="viewport" content="width=device-width">
