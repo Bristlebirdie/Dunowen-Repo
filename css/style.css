@@ -494,7 +494,9 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 300;
 	padding-bottom: 20px;
-	padding-top: 30px;
+	padding-top: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 h3 span {
 	font-style: italic;
@@ -502,7 +504,7 @@ h3 span {
 h4 {
 	text-transform: uppercase;
 	font-weight: 300;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	margin-top: 20px;
 	font-size: 1.3em;
 }
@@ -618,6 +620,7 @@ button a {
 .main {
 	background-color: #161326;
 	clear: both;
+	/*padding-top: 20px;*/
 }
 .main .address {
 	display: none;
@@ -1183,6 +1186,9 @@ textarea {
 /* @end */
 
 /* @group GALLERY */
+.primary-content {
+	/*min-height: 520px;*/
+}
 .primary-content .glist, .sidebar .glist, .glist {
 	list-style: none;
 	margin: 0;
@@ -1217,6 +1223,7 @@ textarea {
 }
 .slideshow.glist {
 	margin-top: 20px;
+	min-height: 485px;
 }
 
 .slideshow.glist img {
@@ -1352,7 +1359,9 @@ textarea {
 		text-transform: uppercase;
 		font-weight: 300;
 	}
-
+	.slideshow.glist {
+		min-height: 485px;
+	}
 }
 
 @media (min-width:45em) {
