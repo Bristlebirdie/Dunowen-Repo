@@ -18,7 +18,7 @@
 	        	<div class="container">
 					<?php perch_content('Page Introduction'); ?>
 					<div class="calendar-container">
-					<iframe src="https://www.google.com/calendar/embed?src=dunowenguesthouse%40gmail.com&ctz=Europe/Dublin" style="border: 0" width="100%" height="350" frameborder="0" scrolling="no"></iframe>
+					<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=7&amp;bgcolor=%23ffffff&amp;src=dunowenguesthouse%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FDublin" style=" border-width:0 " width="100%" height="350" frameborder="0" scrolling="no"></iframe>
 					</div>
 					<?php
 						perch_content('Self Catering Table');			        
