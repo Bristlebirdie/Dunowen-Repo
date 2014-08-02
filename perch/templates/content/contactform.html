@@ -1,52 +1,41 @@
 <perch:form id="contact" method="post" app="perch_forms">
-
-
     <div class="input">
 		<perch:label for="name">* Your name:</perch:label>
 		<perch:input type="text" id="name" required="true" label="Name" />
-		<perch:error for="name" type="required">Please add your name</perch:error>
-		
+		<perch:error for="name" type="required">Please add your name</perch:error>		
 	</div>
-	
 	<div class="input">
 		<perch:label for="email">* Your email:</perch:label>
 		<perch:input type="email" id="email" required="true" label="Email" placeholder="you@company.com" />
 		<perch:error for="email" type="required">Please add your email address</perch:error>
 		<perch:error for="email" type="format">Please check your email address</perch:error>
 	</div>
-	
 	<div class="input">
 		<perch:label for="tel">* Your telephone:</perch:label>
 		<perch:input type="tel" id="tel" required="true" label="Telephone" />
 		<perch:error for="tel" type="required">Please add your telephone number</perch:error>
 	</div>
-	
 	<div class="input">
 		<perch:label for="message">* Your message:</perch:label>
 		<perch:input type="textarea" id="message" required="true" cols="30" rows="4" label="Message" />
 		<perch:error for="message" type="required">Please add a message</perch:error>
 	</div>
-		
 	<div class="input">
 		<perch:label for="accom1">Self-catering option</perch:label>
 		<perch:input id="accom1" type="checkbox" required="false" label="Self-catering" />
 	</div>
-	
 	<div class="input">
 		<perch:label for="accom2">B&amp;B option</perch:label>
 		<perch:input id="accom2" type="checkbox" required="false" label="Bed & Breakfast" />
 	</div>
-	
 	<div class="input">
 		<perch:label for="checkin">Check In Date</perch:label>
 		<perch:input id="checkin" type="text" required="false" label="Check In" />
 	</div>
-	
 	<div class="input">
 		<perch:label for="checkout">Check Out Date</perch:label>
 		<perch:input id="checkout" type="text" required="false" label="Check Out" />
 	</div>
-	
 	<div class="input">
 		<perch:label for="guests">Number of Guests</perch:label>
 		<perch:input id="guests" type="number" min="1" max="30" required="false" label="Guests" />
@@ -54,7 +43,6 @@
 	<div>
 		<perch:input type="submit" id="submit" value="Send" />
 	</div>
-	
 	<perch:success>
 		<div class="alert_success">
 			<perch:content id="success" type="textarea" label="Thank you message" textile="true" editor="markitup" />

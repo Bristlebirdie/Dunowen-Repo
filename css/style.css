@@ -572,40 +572,46 @@ header {
 
 /* @end*/ 
 /* @group button*/ 
-button {
+.btn, input[type=submit], button {
     width: 115px;
-    height: 25px;
+    height: 30px;
     position: relative;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 	border-bottom-style: none;
 	border-style: none;
 	background-color: #c4c3c3;
+	padding: 3px 10px;
 }
-button:after {
+.btn:after, button:after {
     content: '\A';
     position: absolute;
-    right: -12px;
+    right: -15px;
     width: 0;
     height: 0;
-    border-top: 12px solid transparent;
-    border-bottom: 13px solid transparent;
-    border-left: 12px solid #c4c3c3;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #c4c3c3;
 	top: 0;
 }
-button a { 
+.btn a, button a { 
 	display:block; 
 	height:100%; 
 	width:100%; 
 	text-decoration: none;
 	color: #161326;
-	margin-top: 2px;
+	margin-top: 3px;
 }
-.blog-post button {
+.btn a:hover {
+	color: #aa0061;
+}
+.blog-post .btn, .blog-post button {
 	float: right;
 	margin: 20px 0 20px 40px;	
 }
-
+input[type=submit] {
+	border-radius: 5px;
+}
 /* @end*/
 /* @group main content*/ 
 .wrapper {
@@ -643,14 +649,21 @@ button a {
 }
 .container-pic img {
 	width: 35%;
+	margin: 5px 15px 15px 0px;
+}
+/*.container-pic {
+	margin-top: 2px;
+}
+.container-pic img {
+	width: 35%;
 	float: right;
 	margin-top: 5px;
 	margin-bottom: 15px;
 	margin-left: 10px;
-}
-.container-pic li {
+}*/
+/*.container-pic li {
 	list-style: none;
-}
+}*/
 .container p {
 	margin: 0 0 20px;
 	word-wrap: break-word;
@@ -772,15 +785,15 @@ tr {
 	margin: 0 15px 15px 0;
 	width: 100px;
 }
-.f-cols button {
+.f-cols button, .f-cols .btn  {
 	/*float: left;*/
 	clear: left;
 	margin: 15px 10px 0 0;
 	font-size: .9em;
 }
-.f-cols button a:hover {
+/*.f-cols button a:hover, .f-cols button a:hover {
 	color: #aa0061;
-}
+}*/
 .col {
 	/*max-width: 70%;*/
 	word-wrap:break-word;
@@ -901,6 +914,14 @@ small a{
 .map h4 {
 	padding-left: 5%;
 }
+
+/*.cmsmap {
+	margin-left: 5%;
+	max-width: 300px;
+}*/
+.cmsmap img {
+    max-width: none;
+}
 .vcard {
 	margin-left: 0;
 	padding-left: 5%;
@@ -915,13 +936,6 @@ small a{
 .vcard li a {
 	text-decoration: none;
 	color: #aa0061;
-}
-.cmsmap {
-	margin-left: 5%;
-	max-width: 300px;
-}
-.cmsmap img {
-    max-width: none;
 }
 /* @end*/
 /* @group BLOG*/ 
@@ -985,13 +999,13 @@ small a{
 	float: left;
 	margin-bottom: 5%;
 }
-article button {
+article button, article .btn {
 	font-size: .9em;
 	margin: 15px 15px 15px 0;
 }
-article button a:hover {
+/*article button a:hover {
 	color: #aa0061;
-}
+}*/
 aside {
 	margin: 0 5% 40px;
 	color: #fff;
@@ -1310,10 +1324,15 @@ textarea {
 	h2 span {
 		display: block;
 	}
-	.container-pic img {
+/*	.container-pic img {
 		width: 30%;
-/*		padding: 5px;*/
 		margin-left: 20px;
+	}*/
+	.container-pic img {
+		/*width: 35%;*/
+		max-width: 120px;
+		float: right;
+		margin: 5px 0 15px 5%;
 	}
 	.f-cols img {
 		float: left;
@@ -1329,9 +1348,15 @@ textarea {
 	small {
 		width: 100%;
 	}
-	.cmsmap {
-		max-width: 400px;
+	.map {
+		width: 50%;
 	}
+	.cmsmap {
+		width: 100%;
+	}
+/*	.cmsmap {
+		max-width: 400px;
+	}*/
 	form {
 	    width: 80%;
 	}
@@ -1402,6 +1427,9 @@ textarea {
 		max-width: 740px;
 		/*width: 60%;*/
 	}
+	.container-pic img {
+		max-width: 180px;
+	}
 	.gallery.container {
 		max-width: 1200px;
 	}
@@ -1447,22 +1475,8 @@ textarea {
 	.second-nav {
 		padding-right: 10%;
 	}
-	.container-pic img {
-		width: 25%;
-		padding: 5px;
-	}
-/*	.f-cols {
-		padding-left: 2%;
-	}
-	.postpage {
-		height: 120px;
-	}
-	.col:nth-child(3) {
-		padding-top: 132px;
-	}*/
-	
 	.vcard {
-		margin-top: -220px;
+		/*margin-top: -220px;*/
 		padding-left: 550px;
 		margin-bottom: 100px;
 	}
@@ -1530,10 +1544,10 @@ textarea {
 	}
 	/* @end */
 	/* @group PERCH */
-	.cmsmap {
+/*	.cmsmap {
 		margin-left: 0;
 		max-width: 500px;
-	}
+	}*/
 	.f-cols {
 		clear: both;
 	}
