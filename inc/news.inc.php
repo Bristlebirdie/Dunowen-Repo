@@ -23,7 +23,7 @@
     </div>
     <div class="col">
        <h4>Make a reservation</h4>
-       <button type="button"><a href="contact/">Book Now</a></button>
+       <div class="btn"><a href="/contact/">Book Now</a></div>
     </div>
     <small>&copy; Dunowen House 2014. All rights reserved. <a href="http://bristlebird.com" target="_blank">Website developed by Bristlebird Media Works.</a></small>
 </div>
