@@ -1,6 +1,7 @@
 
 /* @override 
-	http://localhost/dunowenhouse.ie/site/style.css */
+	http://localhost/dunowenhouse.ie/site/style.css
+	http://adams-macbook-pro.local:5757/css/menu.css */
 
 
 /* -----------------------------------------------
@@ -41,12 +42,16 @@
 .menu li {
 	list-style: none;
 	}
+.menu li:first-of-type a{
+	border-top: 1px dashed rgba(170, 0, 97, 0.5);
+	
+}
 .menu li a {
   	color: #7a7a7a;
   	text-shadow: none;
   	text-decoration: none;
   	text-transform: uppercase;
-  	background-color: #fff;
+  	background-color: rgba(255, 255, 255, 0.95);
   	display: inline-block;
   	height: 4em;
   	line-height: 1em;
