@@ -631,12 +631,12 @@ input[type=submit] {
 .main .address {
 	display: none;
 }
-.gallery {
+/*.gallery {
 	clear: both;
 	margin-bottom: -3px;
 	z-index: 1;
 	position: relative;
-}
+}*/
 .container {
 	color: #fefeff;
 	font: 1.1em;
@@ -1426,6 +1426,11 @@ textarea {
 	.container { 
 		max-width: 740px;
 		/*width: 60%;*/
+/*		margin: -200px 0 0;
+		background-color: rgba(22, 18, 38, 0.74);
+		z-index: 10000;
+		position: absolute;
+		padding: 0 5%;*/
 	}
 	.container-pic img {
 		max-width: 180px;

@@ -12,9 +12,7 @@
 			</header>
 	        <div class="main">		        
 		    <?php include($_SERVER['DOCUMENT_ROOT'].'/inc/address.inc.php'); ?>
-				<div class="gallery">
        			<?php perch_content('Slideshow'); ?>				
-				</div><!--end gallery-->	
 	        	<div class="container">
 			        <?php perch_content('Content'); ?>
 			        <?php perch_content('Additional Content'); ?>

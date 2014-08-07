@@ -1,11 +1,11 @@
 <div class="flexslider">
   	<perch:repeater id="slides" label="Slides" max="5">
        <perch:before><ul class="slides"></perch:before>
-	       <li><img src="<perch:content id="image" type="image" label="Slide image" width="1340" height="725" crop="true" />" alt="<perch:content id="alt" type="text" label="Slide description" />" /></li>
+	       <li><img src="<perch:content id="image" type="image" label="Slide image" width="1340" height="670" crop="true" />" alt="<perch:content id="alt" type="text" label="Slide description" />" /></li>
        <perch:after></ul></perch:after>
 	</perch:repeater>
 </div>
 <perch:help>
-    <p>This is the main slideshow image at the top of the page - you can upload a maximum of 5 images.</p>
-    <p>Images will be cropped to 1340px x 725px (landscape), so it's best to use landscape images only (or crop portrait images to landscape before uploading to assets). </p>
+    <p>This is the main slideshow image at the top of the page - you can upload a maximum of 5 images. I'd recommend using no more than 3 as too many large images will impact the site's performance and make pages slow to load. </p>
+    <p>Images will be cropped to 1340px x 670px (landscape), so it's best to use landscape images only (or crop portrait images to landscape before uploading to assets). Before uploading, images should be converted to 72dpi and be larger than the dimensions given above (i.e. 1600 x 1200px @ 72dpi).</p>
 </perch:help>
