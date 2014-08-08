@@ -44,15 +44,5 @@
 		<?php include '../inc/footer.inc.php'; ?>	  	   
 	</div><!--end wrapper--> 
 	<?php include '../inc/scripts.inc.php'; ?>
-	<script type="text/javascript" src="../js/min/jquery.cycle.all-min.js"></script>
-	<script type="text/javascript">
-	   jQuery(function($){
-	       var navlinks = $('ul.slideshow-nav a').get();
-	       $('ul.slideshow').cycle({
-	           pager:'ul.slideshow-nav', 
-	           pagerAnchorBuilder: function(i){return navlinks[i];}
-	       });
-	   });
-	</script>
 </body>
 </html>
