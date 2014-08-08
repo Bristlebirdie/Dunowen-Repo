@@ -44,8 +44,8 @@
 		<?php include '../inc/footer.inc.php'; ?>	  	   
 	</div><!--end wrapper--> 
 	<?php include '../inc/scripts.inc.php'; ?>
-	<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
-	<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" src="../js/min/jquery.cycle.all-min.js"></script>
+	<script type="text/javascript">
 	   jQuery(function($){
 	       var navlinks = $('ul.slideshow-nav a').get();
 	       $('ul.slideshow').cycle({
@@ -56,6 +56,3 @@
 	</script>
 </body>
 </html>
-<?php// perch_gallery_images(array( 
-//'template'=>'b_static_list_image.html' 
-//)); ?>
