@@ -755,6 +755,7 @@ tr {
 
 /* @group footer columns */ 
 .f-cols {
+	clear: left;
 	color: #fefeff;
 	background-color: #1e1a34;
 	width: 100%;
@@ -908,7 +909,7 @@ small a{
 /* @end */
 /* @group MAP*/
 .map {
-	width: 90%;
+	width: 100%;
 	margin-top: 40px;
 }
 .map h4 {
@@ -931,7 +932,6 @@ small a{
 .vcard li{
 	list-style: none;
 	padding: 4px;
-	margin: ;
 }
 .vcard li a {
 	text-decoration: none;
@@ -1350,6 +1350,12 @@ textarea {
 	}
 	.map {
 		width: 50%;
+		float: left;
+	}
+	.vcard {
+		float: left;
+		margin: 130px 0 130px 5%;
+		width: 45%;
 	}
 	.cmsmap {
 		width: 100%;
@@ -1482,8 +1488,8 @@ textarea {
 	}
 	.vcard {
 		/*margin-top: -220px;*/
-		padding-left: 550px;
-		margin-bottom: 100px;
+		/*padding-left: 550px;*/
+		/*margin-bottom: 100px;*/
 	}
 	.address {
 		display: inline-block;
@@ -1790,11 +1796,6 @@ textarea {
 	only screen and (        min-device-pixel-ratio: 2),
 	only screen and (                min-resolution: 192dpi),
 	only screen and (                min-resolution: 2dppx) { 
-/*    h1 {
-    	background-image: url(../img/dh-logo@2x.png); 
-	    /* actual image size = 280px by 200px *!/
-        background-size: 120px 86px;
-       }*/
        .follow a, .sharing a, .social a {
        	background-image: url(../img/social-circle@2x.png); 
        	background-size: 40px 200px;
@@ -2326,15 +2327,15 @@ html[xmlns] .slides {
 	}
 
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev { 
-	  opacity: 1; 
-	  left: 10px;
-	  }
-  .flex-direction-nav .flex-next { 
-	  opacity: 1; 
-	  right: 10px;
-	  }
+	.flex-direction-nav .flex-prev { 
+		opacity: 1; 
+		left: 10px;
 	}
+	.flex-direction-nav .flex-next { 
+		opacity: 1; 
+		right: 10px;
+	}
+}
 
 
 

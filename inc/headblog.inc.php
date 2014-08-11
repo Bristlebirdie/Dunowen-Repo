@@ -10,7 +10,7 @@
 <meta name="description" content="<?php echo $description; ?>">
 <meta name="viewport" content="width=device-width">
 <?php echo $meta_og; ?>
-<link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/css/style.css"/>
+<link rel="stylesheet" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/css/style-min.css"/>
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>   
