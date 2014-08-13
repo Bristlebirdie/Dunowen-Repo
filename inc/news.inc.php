@@ -25,5 +25,5 @@
        <h4>Make a reservation</h4>
        <div class="btn"><a href="/contact/">Book Now</a></div>
     </div>
-    <small>&copy; Dunowen House 2014. All rights reserved. <a href="http://bristlebird.com" target="_blank">Website developed by Bristlebird Media Works.</a></small>
+	<small>&copy; Dunowen House 2014. All rights reserved. <a href="http://aislingdoyle.com" target="_blank">Design by Aisling Doyle</a>. <a href="http://bristlebird.com" target="_blank">Web development by Bristlebird Media Works</a>.</small>
 </div>
