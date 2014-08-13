@@ -1,7 +1,8 @@
 /* @override 
 	http://localhost/dunowenhouse.ie/site/style.css
 	http://dunowenhouse/css/style.css
-	http://adams-macbook-pro.local:5757/css/style.css */
+	http://adams-macbook-pro.local:5757/css/style.css
+	http://dunowenhouse/css/style-min.css */
 
 
 /* -----------------------------------------------
@@ -485,6 +486,11 @@ h2 {
 	position: absolute; 
 	/*top: 130px;*/
 	z-index: 5;
+	text-shadow: rgba(0,0,0,0.5) 0 1px 1px;
+	background-color: rgba(22, 18, 38, 0.4);
+	padding: 20px 5%;
+	margin-left: 0;
+	width: 78%;
 }
 h2 span {
 	font-style: italic;
