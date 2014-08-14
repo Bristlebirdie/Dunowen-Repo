@@ -15,3 +15,6 @@ dunowenhouse.ie.esproj/*
 error_log
 config.codekit
 perch/config/config.php
+node_modules/*
+Gruntfile.js
+package.json

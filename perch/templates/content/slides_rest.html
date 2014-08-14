@@ -1,0 +1,3 @@
+<perch:repeater id="slides" label="Slides" max="5">
+	<perch:if exists="perch_item_first"><perch:else /><li><img src="<perch:content id="image" type="image" label="Slide image" width="1340" height="670" crop="true" />" alt="<perch:content id="alt" type="text" label="Slide description" />" /></li></perch:if>
+</perch:repeater>
