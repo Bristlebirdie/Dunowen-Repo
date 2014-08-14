@@ -1074,7 +1074,8 @@ aside a:hover {
 	color: #333;
 }
 .paging {
-	margin-top: 100px;
+	clear: left;
+	padding-top: 100px;
 }
 .paging a {
 	padding: 0 15px;
