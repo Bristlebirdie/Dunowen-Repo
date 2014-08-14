@@ -2334,7 +2334,7 @@ html[xmlns] .slides {
 	opacity: 1; 
 	cursor: default;
 	}
-
+.flexslider.loading .slides > li:first-child { opacity: 1 !important; }
 @media screen and (max-width: 860px) {
 	.flex-direction-nav .flex-prev { 
 		opacity: 1; 
