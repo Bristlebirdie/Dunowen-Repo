@@ -37,7 +37,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/bed-breakfast/</loc>
+  <loc>http://dunowenhouse.ie/gourmet-catering/</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://dunowenhouse.ie/weddings-and-celebrations/</loc>
   <changefreq>weekly</changefreq>
   <priority>0.80</priority>
 </url>
