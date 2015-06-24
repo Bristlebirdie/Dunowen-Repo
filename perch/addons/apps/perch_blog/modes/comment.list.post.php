@@ -38,22 +38,22 @@
             $items = array();
 
             $items[] = array(
-                    'arg'=>'status',
-                    'val'=>'live',
-                    'label'=>'Live',
-                    'path'=>$API->app_path().'/comments/'
+                    'arg'   => 'status',
+                    'val'   => 'live',
+                    'label' => $Lang->get('Live'),
+                    'path'  => $API->app_path().'/comments/'
                 );
             $items[] = array(
-                    'arg'=>'status',
-                    'val'=>'rejected',
-                    'label'=>'Rejected',
-                    'path'=>$API->app_path().'/comments/'
+                    'arg'   => 'status',
+                    'val'   => 'rejected',
+                    'label' => $Lang->get('Rejected'),
+                    'path'  => $API->app_path().'/comments/'
                 );
             $items[] = array(
-                    'arg'=>'status',
-                    'val'=>'spam',
-                    'label'=>'Spam',
-                    'path'=>$API->app_path().'/comments/'
+                    'arg'   => 'status',
+                    'val'   => 'spam',
+                    'label' => $Lang->get('Spam'),
+                    'path'  => $API->app_path().'/comments/'
                 );
             
            
@@ -95,7 +95,9 @@
 					<?php echo strftime(str_replace(' ', '&nbsp;', PERCH_DATE_SHORT), strtotime($Comment->commentDateTime())); ?>
 					</a>
 				</td>
-                <td><?php echo $HTML->encode($Comment->postTitle()); ?></td>
+                <td title="<?php 
+                    echo PerchUtil::html(PerchUtil::excerpt_char($Comment->commentHTML(), 500));
+                ?>"><?php echo $HTML->encode($Comment->postTitle()); ?></td>
 				<td><?php echo $HTML->encode($Comment->commentName()); ?></td>
 				
                 <td><?php echo $HTML->encode($Comment->commentEmail()); ?></td>

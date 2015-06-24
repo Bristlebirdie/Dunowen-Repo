@@ -40,9 +40,11 @@
 
     $Form = $API->get('Form');
 
+    $Form->handle_empty_block_generation($Template);
+
     $Form->require_field('imageAlt', 'Required');
     
-    $Form->set_required_fields_from_template($Template);
+    $Form->set_required_fields_from_template($Template, $details);
 
     if ($Form->submitted()) {
     	        
@@ -50,7 +52,7 @@
 		
     	$data = $Form->receive($postvars);
     	
-    	$dynamic_fields = $Form->receive_from_template_fields($Template, $details);
+    	$dynamic_fields = $Form->receive_from_template_fields($Template, $details, $Images, $Image);
     	$data['imageDynamicFields'] = PerchUtil::json_safe_encode($dynamic_fields);
     	
     	if (is_object($Image)) {

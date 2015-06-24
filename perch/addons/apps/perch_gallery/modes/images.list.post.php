@@ -68,7 +68,7 @@
         
         $opts = array();
         $opts[] = array('label'=>'', 'value'=>'');
-        $opts[] = array('label'=>'Delete', 'value'=>'delete');
+        $opts[] = array('label'=>$Lang->get('Delete'), 'value'=>'delete');
 
         echo $Form->field_start('action');
         echo $Form->label('action', 'With selected images');

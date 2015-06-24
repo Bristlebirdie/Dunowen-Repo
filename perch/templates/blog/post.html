@@ -24,3 +24,8 @@
     <p>To display news / blog posts correctly, you must select 'default' from the 'Post Type' drop down and 'Posts' from the 'Section' drop down menus at the bottom of the page.</p>
 </perch:help>
 
+<perch:categories id="categories" set="blog" label="Categories" display-as="checkboxes">
+    <a href="archive.php?cat=<perch:category id="catSlug" type="slug" />">
+        <perch:category id="catTitle" type="text" />
+    </a>
+</perch:categories>

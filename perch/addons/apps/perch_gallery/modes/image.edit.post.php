@@ -33,7 +33,7 @@
                 <a ><?php echo $Lang->get('Image'); ?></a>
             </span>
             </li>
-            <li class="<?php echo ($filter=='options'?'selected':''); ?>"><a href="<?php echo $HTML->encode($API->app_path().'/edit/?id='.$Album->id()); ?>"><?php echo $Lang->get('Album Options'); ?></a></li>
+            <li><a href="<?php echo $HTML->encode($API->app_path().'/edit/?id='.$Album->id()); ?>"><?php echo $Lang->get('Album Options'); ?></a></li>
         </ul>
         
         <?php

@@ -12,6 +12,13 @@ class PerchForms_Response extends PerchAPI_Base
         return false;
     }
     
+    public function page()
+    {
+        $all = PerchUtil::json_safe_decode($this->responseJSON());
+        if (isset($all->page)) return $all->page;
+        return false;
+    }
+
     public function files()
     {
         $all = PerchUtil::json_safe_decode($this->responseJSON());
@@ -65,5 +72,3 @@ class PerchForms_Response extends PerchAPI_Base
         }
     }
 }
-
-?>

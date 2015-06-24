@@ -29,13 +29,16 @@
     $Template->set('gallery/album.html', 'gallery');
 
 
+
     $result = false;
 
     $Form = $API->get('Form');
 
+    $Form->handle_empty_block_generation($Template);
+
     $Form->require_field('albumTitle', 'Required');
     
-    $Form->set_required_fields_from_template($Template);
+    $Form->set_required_fields_from_template($Template, $details);
 
     if ($Form->submitted()) {
 
@@ -43,7 +46,7 @@
         $postvars = array('albumID','albumTitle','albumOrder');
 		
     	$data = $Form->receive($postvars);
-    	$dynamic_fields = $Form->receive_from_template_fields($Template, $details);
+    	$dynamic_fields = $Form->receive_from_template_fields($Template, $details, $GalleryAlbums, $Album);
     	$data['albumDynamicFields'] = PerchUtil::json_safe_encode($dynamic_fields);
     	
 
@@ -79,7 +82,3 @@
     if (isset($_GET['created']) && !$message) {
         $message = $HTML->success_message('Your album has been successfully created. Return to %salbum listing%s', '<a href="'.$API->app_path() .'">', '</a>'); 
     }
-
-
-   
-?>
