@@ -566,5 +566,5 @@ FileETag None
 # <IfModule mod_headers.c>
 #    Header set Connection Keep-Alive
 # </IfModule>
-Redirect 301 /bed-and-breakfast/ http://dunowenhouse.ie/stay/
+Redirect 301 /bed-breakfast/ http://dunowenhouse.ie/stay/
 
