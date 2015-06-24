@@ -828,6 +828,28 @@ tr {
 .f-cols small {
 	display: none;
 }
+.logo {
+	margin: 30px 0 0;
+	opacity: 0.75;
+}
+.logo a {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url('../img/footer-logos@2x.png') no-repeat left top;
+	background-size: 202px 85px;	
+}
+.failte-ireland a {
+	width: 202px;
+	height: 39px;
+}
+.wild-atlantic-way a {
+	background-position-y: -39px;
+	width: 162px;
+	height: 46px;	
+}
+
 /* @end*/
 
 /*@group footer*/

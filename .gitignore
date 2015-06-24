@@ -6,7 +6,7 @@
 *.out
 
 ## project files to ignore
-i/*
+img/*
 pdf/*
 f/*
 perch/config/live.inc.php
@@ -27,3 +27,5 @@ perch/config/config.php
 node_modules/*
 Gruntfile.js
 package.json
+img/footer-logos.png
+img/footer-logos@2x.png
