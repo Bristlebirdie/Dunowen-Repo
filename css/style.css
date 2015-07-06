@@ -1737,11 +1737,11 @@ textarea {
 		background: url('../img/sidebar-logos@2x.png') no-repeat left top;
 		background-size: 120px 231px;	
 	}
-	.failte-ireland a {
+	.logo.failte-ireland a {
 		width: 120px;
 		height: 188px;
 	}
-	.wild-atlantic-way a {
+	.logo.wild-atlantic-way a {
 		background-position-y: -189px;
 		width: 120px;
 		height: 42px;	
