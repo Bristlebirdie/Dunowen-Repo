@@ -1742,7 +1742,7 @@ textarea {
 		height: 188px;
 	}
 	.logo.wild-atlantic-way a {
-		background-position-y: -189px;
+		background-position: 0 -189px;
 		width: 120px;
 		height: 42px;	
 	}
