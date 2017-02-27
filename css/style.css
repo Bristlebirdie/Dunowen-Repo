@@ -891,7 +891,9 @@ footer p {
 	display: table;
 }
 .social a {
-	background: url(../img/social-circle.png) no-repeat;
+	background: #fff url(../img/social-circle.png) 0 0 no-repeat;
+	border-radius: 50%;
+	/*background: url(../img/social-circle.png) no-repeat;*/
 	text-indent: -999em;
 	overflow: hidden;
 	display: inline-block;
@@ -904,6 +906,9 @@ footer p {
 }
 .social a.twitter {
 	background-position: 0 -80px;
+}
+.social a.instagram {
+	background-position: 0 -200px;
 }
 .social a.tripadvisor {
 	background-position: 0 -160px;
@@ -1138,7 +1143,8 @@ a.next:after {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: url(../img/social-circle.png) 0 0 no-repeat;
+	background: #fff url(../img/social-circle.png) 0 0 no-repeat;
+	border-radius: 50%;
 }
 .sharing a.facebook {
 	background-position: 0 -120px;
@@ -1660,7 +1666,7 @@ textarea {
 	.follow {
 		width: 160px;
 		height: 60px;
-		margin-left: -15px;
+		margin-left: -20px;
 	}
 	.follow a {
 		background: url(../img/social-circle.png) no-repeat;
@@ -1670,6 +1676,7 @@ textarea {
 		width: 40px;
 		height: 40px;
 		display: inline-block;
+		margin-right: -8px;
 	}
 	.follow a.facebook {
 		background-position: 0 -120px;
@@ -1677,6 +1684,8 @@ textarea {
 	.follow a.twitter {
 		background-position: 0 -80px;
 	}
+	.follow a.instagram {
+	  background-position: 0 -200px; }
 	.follow a.tripadvisor {
 		background-position: 0 -160px;
 		margin-left: 8px;
@@ -1726,7 +1735,7 @@ textarea {
 	width: 140px;
 }
 	.logo {
-		margin: 30px 0 0;
+		margin: 25px 0 0;
 		/*opacity: 0.75;*/
 	}
 	.logo a {
@@ -1734,17 +1743,27 @@ textarea {
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
-		background: url('../img/sidebar-logos@2x.png') no-repeat left top;
-		background-size: 120px 231px;	
+		background: url('../img/sidebar-logos-2017@2x.png') no-repeat left top;
+		background-size: 120px 280px;	
 	}
-	.logo.failte-ireland a {
+/*	.logo.failte-ireland a {
 		width: 120px;
 		height: 188px;
-	}
+	}*/
 	.logo.wild-atlantic-way a {
-		background-position: 0 -189px;
+		/*background-position: 0 -189px;*/
 		width: 120px;
-		height: 42px;	
+		height: 43px;	
+	}
+	.logo.guides-2016 a {
+		background-position: 0 -43px;
+		width: 120px;
+		height: 117px;	
+	}
+	.logo.guides-2017 a {
+		background-position: 0 -160px;
+		width: 120px;
+		height: 120px;	
 	}
 	/* @end*/
 	
@@ -1857,7 +1876,7 @@ textarea {
 	only screen and (                min-resolution: 2dppx) { 
        .follow a, .sharing a, .social a {
        	background-image: url(../img/social-circle@2x.png); 
-       	background-size: 40px 200px;
+       	background-size: 40px 240px;
        }
 }
 
@@ -2008,7 +2027,7 @@ body:not(:target) #menu:target .back a {
 	padding:0;
 	margin: 74px 0 0;
 	list-style-type:none;
-	height:30px;
+	/*height:30px;*/
 	width: 78%;
 	float: right;
 	text-transform: uppercase;

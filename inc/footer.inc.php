@@ -9,6 +9,7 @@
 	<div class="social">
 	    <a class="facebook" href="https://www.facebook.com/dunowenhouse" target="_blank" title="Facebook">facebook</a>
 	    <a class="twitter" href="https://twitter.com/dunowenhouse" target="_blank" title="twitter">twitter</a>
+        <a class="instagram" href="https://www.instagram.com/dunowen_house/" target="_blank" title="Instagram">Instagram</a>
 	    <a class="tripadvisor" href="http://www.tripadvisor.ie/VacationRentalReview-g211877-d2053918-Dunowen_House-Clonakilty_County_Cork.html" target="_blank" title="tripadvisor">tripadvisor</a>
 	</div><!--end social-->
 	<small>&copy; Dunowen House 2014. All rights reserved. <a href="http://aislingdoyle.com" target="_blank">Design by Aisling Doyle</a>. <a href="http://bristlebird.com" target="_blank">Web development by Bristlebird Media Works</a>.</small>
