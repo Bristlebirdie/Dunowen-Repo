@@ -1,4 +1,3 @@
-
 <?php
 	include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php');
 	include($_SERVER['DOCUMENT_ROOT'].'/inc/head.inc.php');
