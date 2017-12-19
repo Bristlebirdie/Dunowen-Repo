@@ -6,7 +6,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>');
 $(window).load(function() {
-	if ($(window).width() > 480) {
+//	if ($(window).width() > 480) {
 		$.getScript('/js/min/jquery.flexslider-ck.js', function(data, textStatus){
 			$.get("/slides.php?page=<?php echo $page_name; ?>", function(data) {
 			    $('.slides').append(data);
@@ -18,7 +18,7 @@ $(window).load(function() {
 				});
 			});	
 		});
-	}
+//	}
 });
 </script>
 <?php 
