@@ -494,6 +494,7 @@ h2 {
 	padding: 20px 5%;
 	margin-left: 0;
 	width: 78%;	
+	display: none;
 }
 h2 span {
 	font-style: italic;
@@ -1430,6 +1431,9 @@ textarea {
 	}
 	.slideshow.glist {
 		min-height: 485px;
+	}
+	.gallery h2 {
+		display: block;
 	}
 }
 
