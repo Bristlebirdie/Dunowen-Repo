@@ -25,6 +25,3 @@
         echo $Form->form_end();
     }
     
-    echo $HTML->main_panel_end();
-
-?>

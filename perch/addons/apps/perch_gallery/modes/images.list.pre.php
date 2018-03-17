@@ -1,6 +1,5 @@
 <?php
     
-    $HTML = $API->get('HTML');
     // An imageset is a container for the meta information around an image so we can store the original, main and thumb sizes in images.
     // In the UI we refer to an image - generally this is really an imageset object unless we are dealing with one image file itself
     $Images         = new PerchGallery_Images($API);
@@ -20,8 +19,7 @@
     $message = false;
     
     if ($Form->submitted()) {
-        $postvars = array('batch','action');
-        $data = $Form->receive($postvars);
+        $data = $Form->receive(['batch','action']);
         
         if ($data['action']=='delete') {
             if (PerchUtil::count($data['batch'])) {
@@ -68,5 +66,3 @@
     
     
     $images = $Images->get_by_album_id($albumID, array('admin_thumb'));
-
-?>

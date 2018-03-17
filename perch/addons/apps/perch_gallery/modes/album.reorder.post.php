@@ -1,49 +1,49 @@
 <?php
-    # Side panel
-    echo $HTML->side_panel_start();
-    echo $HTML->para('This page enables you to reorder your current albums.');
-        
-    echo $HTML->side_panel_end();
-    
-    
-    # Main panel
-    echo $HTML->main_panel_start();
-    include('_subnav.php');
 
-    echo '<a href="'.$HTML->encode($API->app_path().'/edit/').'" class="button add">'.$Lang->get('Add Album').'</a>';
+    $Alert->set('info', $Lang->get('Drag and drop the albums to reorder them.'));
 
+    echo $HTML->title_panel([
+        'heading' => $Lang->get('Listing all albums'),
+        'button'  => [
+            'text' => $Lang->get('Add album'),
+            'link' => $API->app_nav().'/edit/',
+            'icon' => 'core/plus',
+            'priv' => 'perch_gallery.album.create',
+        ],
+    ], $CurrentUser);
 
-    echo $HTML->heading1('Listing all albums');
-    
-    echo $Alert->output();
+    $Smartbar = new PerchSmartbar($CurrentUser, $HTML, $Lang);
 
-    /* ----------------------------------------- SMART BAR ----------------------------------------- */
-    ?>
-    <ul class="smartbar">
-        <li><a href="<?php echo PerchUtil::html($API->app_path().'/'); ?>"><?php echo $Lang->get('Albums'); ?></a></li>
-        <li class="selected fin"><a class="icon reorder" href="<?php echo PerchUtil::html($API->app_path().'/reorder/'); ?>"><?php echo $Lang->get('Reorder Albums'); ?></a></li>
-    </ul>
-     <?php echo $Alert->output(); ?>
-    <?php
-    /* ----------------------------------------- /SMART BAR ----------------------------------------- */
+    $Smartbar->add_item([
+        'active' => false,
+        'title' => $Lang->get('Albums'),
+        'link'  => $API->app_nav(),
+        'icon'  => 'assets/o-photo'
+    ]);
 
+    $Smartbar->add_item([
+        'active' => true,
+        'title' => $Lang->get('Reorder'),
+        'link'  => $API->app_nav().'/reorder/',
+        'icon'  => 'core/menu',
+        'position' => 'end',
+    ]);
 
+    echo $Smartbar->render();
     
     if (PerchUtil::count($albums)) {
-?>
-    <form method="post" action="<?php echo PerchUtil::html($Form->action()); ?>">
-    
-<?php
-    $Alert->set('notice', $Lang->get('Drag and drop the albums to reorder them.').' '. $Form->submit('reorder', 'Save Changes', 'button action'));
-    $Alert->output();
 
+        echo '<div class="inner">';
 
-    echo '<ol class="album-list sortable">';
+    echo $Form->form_start('reorder', 'reorder');
+
+    echo '<ol class="album-list basic-sortable sortable-tree">';
 
     foreach($albums as $Album) {
         
-        echo '<li><div class="page icon">';
+        echo '<li><div>';
             echo '<input type="text" name="a-'.$Album->id().'" value="'.$Album->albumOrder().'" />';
+            echo PerchUI::icon('assets/o-photo');
             echo $HTML->encode($Album->albumTitle()).'</div>';
         echo '</li>';
         
@@ -51,9 +51,12 @@
 
     echo '</ol>';
 
+        echo $Form->hidden('orders', '');
+        echo $Form->submit_field('reorder', 'Save Changes', $API->app_path());
+
+        echo $Form->form_end();
+        echo '</div>';
+
     }
-?>
-    </form>
- <?php   
-    echo $HTML->main_panel_end();
-?>
+
+

@@ -21,7 +21,7 @@ div.plupload_header_content {
 }
 
 ul.image-list {
-	margin: 0 0 0 10px;
+	margin: 0 0 0 -15px;
 	list-style: none;
 }
 
@@ -34,9 +34,12 @@ ul.image-list li {
 
 ul.image-list li input {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 0px;
+	right: 0px;
 	opacity: 0.5;
+	width: 25px;
+	height: 25px;
+
 }
 
 ul.image-list li img {
@@ -53,4 +56,23 @@ body #content #main-panel ul.image-list li a.img:link,
 body #content #main-panel ul.image-list li a.img:visited {
 	border: none;
 	text-decoration: none;
+}
+
+.plupload_filelist_footer {
+	height: 36px;
+}
+
+.plupload_filelist_header, 
+.plupload_filelist_footer {
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e9eaea;
+}
+
+.plupload_scroll .plupload_filelist {
+	background-color: #fcfcfc;
+}
+
+#gallery-controls {
+	clear: left;
+	padding-top: 36px;
 }

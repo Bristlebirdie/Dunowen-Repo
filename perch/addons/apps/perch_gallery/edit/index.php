@@ -4,19 +4,16 @@
     
     $API  = new PerchAPI(1.0, 'perch_gallery');
     $Lang = $API->get('Lang');
-
-    # include your class files
-    include('../PerchGallery_Albums.class.php');
-    include('../PerchGallery_Album.class.php');
-    include('../PerchGallery_Images.class.php');
-    include('../PerchGallery_Image.class.php');
+    $HTML = $API->get('HTML');
+    $Paging = $API->get('Paging');
 
     # Set the page title
     $Perch->page_title = $Lang->get('Gallery: Edit Album');
 
-    $Perch->add_css($API->app_path().'/admin.css');
+    #$Perch->add_css($API->app_path().'/admin.css');
 
     # Do anything you want to do before output is started
+    include('../modes/_subnav.php');
     include('../modes/album.edit.pre.php');
     
     
@@ -30,4 +27,3 @@
     
     # Bottom layout
     include(PERCH_CORE . '/inc/btm.php');
-?>

@@ -1,37 +1,59 @@
 <?php  
-    # Side panel
-    echo $HTML->side_panel_start();
-     echo $HTML->para('Edit your album here.');
-    echo $HTML->side_panel_end();
-    
-    
-    # Main panel
-    echo $HTML->main_panel_start(); 
-    include('_subnav.php');
 
-    if ($albumID) echo '<a href="'.$HTML->encode($API->app_path().'/images/upload/?album_id='.$albumID).'" class="button add">'.$Lang->get('Add Image').'</a>';
+    if ($albumID) {
+
+        echo $HTML->title_panel([
+            'heading' => $Lang->get($heading1),
+            'button'  => [
+                'text' => $Lang->get('Add image'),
+                'link' => $API->app_nav().'/images/upload/?album_id='.$albumID,
+                'icon' => 'core/plus',
+            ],
+        ], $CurrentUser);
+
+    } else {
+
+        echo $HTML->title_panel([
+            'heading' => $Lang->get($heading1),
+        ], $CurrentUser);
 
 
-        echo $HTML->heading1($heading1);
-
-
-        if ($message) echo $message;    
+    }
+     
+    if (isset($message)) echo $message;
 
         $filter = 'options';
 
 if (is_object($Album)) {        
-        /* ----------------------------------------- SMART BAR ----------------------------------------- */
-        
-        ?>
 
-        <ul class="smartbar">
-            <li class="<?php echo ($filter=='images'?'selected':''); ?>"><a href="<?php echo $HTML->encode($API->app_path().'/images/?id='.$Album->id()); ?>"><?php echo $Lang->get('Images'); ?></a></li>
-            <li class="<?php echo ($filter=='options'?'selected':''); ?>"><a href="<?php echo $HTML->encode($API->app_path().'/edit/?id='.$Album->id()); ?>"><?php echo $Lang->get('Album Options'); ?></a></li>
-        </ul>
-        
-        <?php
 
-        /* ----------------------------------------- /SMART BAR ----------------------------------------- */
+    $Smartbar = new PerchSmartbar($CurrentUser, $HTML, $Lang);
+
+    $Smartbar->add_item([
+        'active' => false,
+        'type' => 'breadcrumb',
+        'links' => [
+            [
+                'title' => $Lang->get('Albums'),
+                'link'  => $API->app_nav(),
+            ],
+            [
+                'title' => $Album->albumTitle(),
+                'link'  => $API->app_nav().'/images/?id='.$Album->id(),
+            ]
+        ]
+        
+    ]);
+
+    $Smartbar->add_item([
+        'active' => true,
+        'title' => $Lang->get('Options'),
+        'link'  => $API->app_nav().'/edit/?id='.$Album->id(),
+        'icon'  => 'core/o-toggles',
+    ]);
+
+    echo $Smartbar->render();
+
 }
 
         $template_help_html = $Template->find_help();
@@ -40,16 +62,11 @@ if (is_object($Album)) {
             echo '<div id="template-help">' . $template_help_html . '</div>';
         }
 
-
         echo $HTML->heading2('Album details');
         echo $Form->form_start('content-edit');
-            echo $Form->text_field('albumTitle', 'Title', isset($details['albumTitle'])?$details['albumTitle']:false, 'xl');
+            echo $Form->text_field('albumTitle', 'Title', isset($details['albumTitle'])?$details['albumTitle']:false);
     		echo $Form->fields_from_template($Template, $details, $GalleryAlbums->static_fields);
-            echo $Form->text_field('albumOrder', 'Position in album list', isset($details['albumOrder'])?$details['albumOrder']:false, 'order xs');
+            echo $Form->text_field('albumOrder', 'Position in album list', isset($details['albumOrder'])?$details['albumOrder']:'1', 'order s input-simple');
             echo $Form->hidden('albumID', isset($details['albumID'])?$details['albumID']:false);
             echo $Form->submit_field('btnSubmit', 'Save', $API->app_path());
         echo $Form->form_end();
-    echo $HTML->main_panel_end();
-
-    
-?>

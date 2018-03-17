@@ -12,6 +12,8 @@ Perch.Apps.PerchGallery = function() {
 			var albumID=$('#albumID').val();
 			var success_url=$('#success').val();
 			
+			form.addClass('inner');
+
 			form.pluploadQueue({
 				runtimes : 'html5,flash,silverlight,html4',
 				url : '../../upload.php',

@@ -7,8 +7,6 @@
     $message = false;
     $new_image = false;
 
-    $HTML = $API->get('HTML');
-
     if (isset($_GET['album_id']) && $_GET['album_id']!='') {
         $albumID = (int) $_GET['album_id'];    
         $Album = $Albums->find($albumID);
@@ -166,4 +164,3 @@
     if (isset($_GET['created']) && !$message) {
         $message = $HTML->success_message('Your image has been successfully created. Return to %simage listing%s', '<a href="'.$API->app_path() .'/images/?id='.$albumID.'">', '</a>'); 
     }
-?>

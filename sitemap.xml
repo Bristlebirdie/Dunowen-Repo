@@ -6,189 +6,612 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://dunowenhouse.ie/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/about/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/about/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/history/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/guest-reviews/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/map/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/stay/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/stay/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/self-catering/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/self-catering/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/gourmet-catering/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/gourmet-catering/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/corporate-stays/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/weddings-and-celebrations/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/orchard-cottage/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/local-love/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/weddings-and-celebrations/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/activities/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/local-love/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/eating-drinking/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/activities/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/beaches/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/eating-drinking/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/pampering/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/beaches/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/gallery/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/gallery/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/contact/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/contact/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/rates/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/rates/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/2014-07-08-sands-cove-fishing-competition/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/map/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/2014-07-05-summer-fruits-galore/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2018-02-18-vintage-afternoon-tea-at-dunowen/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2018-01-11-luxury-hen-parties-at-dunowen/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/perch/resources/irish-country-magazine-2017</loc>
+  <lastmod>2017-12-19T15:50:01+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/2014-07-01-top-temperatures-in-ardfield/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/perch/resources/sample-3-course-dinner-menu-2018.docx</loc>
+  <lastmod>2017-12-13T20:07:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/?page=2</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/perch/resources/sample-3-course-dinner-menu-2018-2.docx</loc>
+  <lastmod>2017-12-13T20:15:14+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/2014-06-20-dunowen-house-has-a-new-family/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2017-07-27-hen-party-tips/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/category/festivals/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2017-02-21-2017-awards/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/category/gardening/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/?page=2</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/ardfield/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2017-01-16-januarys-blue-monday-reveals-multi-colours-of-west-cork-life/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/dunowen/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2016-01-29-mckennas-guides-2016/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/family/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2015-07-16-clonakilty-living-fab-new-magazine-launched/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/festival/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2015-03-30-image-magazine-loves-us/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/food/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2015-03-08-boutique-wedding-civil-partners-ceremony-venue/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/fruits/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2014-10-06-dunowen-house-finalist-in-web-awards/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/fun/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/2014-07-08-sands-cove-fishing-competition/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/gardening/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/category/festivals/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/home/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/category/gardening/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/news/tag/pudding/</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/tag/ra-d41d-cd98/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/gallery/?s=photo-gallery</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/tag/clonakilty/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/gallery/?s=interior-photos</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/tag/clonakiltyliving/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://dunowenhouse.ie/gallery/?s=dunowen-locality</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://dunowenhouse.ie/news/tag/dunowenhouse/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/westcork/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/wildatlanticway/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/2014-web-awards-finalist/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/5-star-holiday-rental/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/imagemagazine/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/afternoon-tea/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/afternoon-tea-recipes/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/best-in-ireland/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/blue-monday/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/civil-partnership/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/clonakilty-hen-parties/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/dunowen-house/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/family-friendly/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/festival/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/five-star-holiday-rental/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/five-star-vacation-rental/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/food/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/fruits/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/fun/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/gardening/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/girls-getaway/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/guidesie/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/hen-parties/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/hen-parties-clonakilty/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/hen-parties-cork/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/hen-parties-ireland/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/hen-party/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/henparty/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/january/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxury-hen-parties/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxury-hen-party/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxury-self-catering/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxury-vacation-rental/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/mckennas-guides/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/pampering/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/pr/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/private-catering/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/pudding/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/stylish-hen-party-ideas/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/vintage-afternoon-tea/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/vintage-hen-party/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/waw/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/wedding-venue/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/weddings/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/west-cork/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/west-cork-wedding-venue/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/wild-atlantic-way/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/gallery/?s=photo-gallery</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/gallery/?s=interior-photos</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/gallery/?s=orchard-cottage</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/gallery/?s=dunowen-locality</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%20Luxury%20Hen%20Parties%20at%20Dunowen</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxurury-hen-parties/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/?page=3</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2014-07-05-apples-blackberries/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2014-07-01-top-temperatures-in-ardfield/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2017-11-30-january-special-deal/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2015-03-30-girls-getaway/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2014-11-17-5-mile-supper-experience-with-masterchef-winner-diana-dodog/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2018-01-11-luxury-hen-parties-at-dunowen/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2016-10-25-pre-christmas-luxury-weekend-escape/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2014-09-01-opening-special-offer/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/2017-11-30-january-special-deal/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2016-10-25-pre-christmas-luxury-weekend-escape/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2015-03-30-girls-getaway/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2014-11-17-5-mile-supper-experience-with-masterchef-winner-diana-dodog/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2014-09-24-mid-week-special-offer/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/special-offers/2014-09-01-opening-special-offer/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/?page=4</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%20Girls%20Getaway</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%205%20Mile%20Supper%20Experience%20with%20Masterchef%20Winner%20Diana%20Dodog</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/masterchef/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/diana-dodog/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/tasting-menu/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%20Pre-Christmas%20Luxury%20Weekend%20Escape</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/christmas-party/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/festive-escape/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%20Opening%20Special%20Offer</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/luxury-bb/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/news/tag/boutique-bb/</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://dunowenhouse.ie/contact/?subject=Special%20offer%20enquiry%20-%20Mid-Week%20Special%20Offer</loc>
+  <lastmod>2018-03-17T00:48:36+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
 </urlset>

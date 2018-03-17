@@ -3,8 +3,6 @@
     $Albums     = new PerchGallery_Albums($API);
     $Images     = new PerchGallery_Images($API);
     $Versions   = new PerchGallery_ImageVersions($API);
-
-    $HTML       = $API->get('HTML');
     
     $Template   = $API->get('Template');
     $Template->set('gallery/image.html', 'gallery');
@@ -15,6 +13,7 @@
         
     if (isset($_GET['album_id']) && $_GET['album_id']!='') {
         $albumID = (int) $_GET['album_id'];    
+        $Album = $Albums->find($albumID);
     }
     
 
@@ -113,4 +112,3 @@
         
     }
     
-?>

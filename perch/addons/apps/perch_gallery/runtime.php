@@ -1,13 +1,15 @@
 <?php
-   
-    require('PerchGallery_Albums.class.php');
-    require('PerchGallery_Album.class.php');
-    require('PerchGallery_Images.class.php');
-    require('PerchGallery_Image.class.php');
-    require('PerchGallery_ImageVersions.class.php');
-    require('PerchGallery_ImageVersion.class.php');
-    
-    
+
+    spl_autoload_register(function($class_name){
+        if (strpos($class_name, 'PerchGallery')===0) {
+            include(PERCH_PATH.'/addons/apps/perch_gallery/lib/'.$class_name.'.class.php');
+            return true;
+        }
+        return false;
+    });
+
+    include(__DIR__.'/fieldtypes.php');
+
     /**
      * 
      * list albums, if return_image is set to true will also return an image for each album. 
@@ -26,6 +28,8 @@
     	
     	$opts = array_merge($default_opts, $opts);
     	
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
+
     	if ($opts['skip-template']) $return=true;
     	
     	$API = new PerchAPI(1.0, 'perch_gallery');
@@ -86,6 +90,8 @@
     	);
     	
     	$opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
     	
     	if ($opts['skip-template']) $return=true;
     	
@@ -137,6 +143,8 @@
     	);
     	
     	$opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
     	
     	if ($opts['skip-template']) $return=true;
     	
@@ -192,6 +200,8 @@
         );
         
         $opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
         
         if ($opts['skip-template']) $return=true;
         
@@ -268,6 +278,8 @@
     	);
     	
     	$opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
     	
     	if ($opts['skip-template']) $return=true;
     	
@@ -304,6 +316,8 @@
     	);
     	
     	$opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
             
         $API    = new PerchAPI(1.0, 'perch_gallery');
         $Images = new PerchGallery_Images($API);
@@ -330,6 +344,8 @@
     	);
     	
     	$opts = array_merge($default_opts, $opts);
+
+        if (isset($opts['data'])) PerchSystem::set_vars($opts['data']);
         
         $API = new PerchAPI(1.0, 'perch_gallery');
     	$Images = new PerchGallery_Images($API);
@@ -365,6 +381,3 @@
     	}
         
     }
-
-
-?>

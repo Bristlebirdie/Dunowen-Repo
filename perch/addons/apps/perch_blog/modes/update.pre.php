@@ -1,14 +1,9 @@
 <?php
 
-	include(PERCH_PATH.'/core/apps/categories/PerchCategories_Sets.class.php');
-	include(PERCH_PATH.'/core/apps/categories/PerchCategories_Set.class.php');
-	include(PERCH_PATH.'/core/apps/categories/PerchCategories_Categories.class.php');
-	include(PERCH_PATH.'/core/apps/categories/PerchCategories_Category.class.php');
-
 	$Posts = new PerchBlog_Posts($API);
 	$posts = $Posts->all();
 	if (PerchUtil::count($posts)==false) {
-		$Settings->set('perch_blog_update', '5.0');
+		$Settings->set('perch_blog_update', '5.6');
 		PerchUtil::redirect($API->app_path());
 	}
 
@@ -29,6 +24,7 @@
 	    $UserPrivileges->create_privilege('perch_blog.import', 'Import data');
 	    $UserPrivileges->create_privilege('perch_blog.authors.manage', 'Manage authors');
 	    $UserPrivileges->create_privilege('perch_blog.sections.manage', 'Manage sections');
+	    if (PERCH_RUNWAY) $UserPrivileges->create_privilege('perch_blog.blogs.manage', 'Manage blogs');
 
 	    
 	    $db = $API->get('DB');
@@ -144,6 +140,69 @@
 	            }
 	        }
 	    }
+
+
+	    // Real 5.0 (5.0.1)
+
+	    $sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` ADD COLUMN `blogID` int(10) UNSIGNED DEFAULT 1 after `postID`";
+	    $db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` ADD COLUMN `postMetaTemplate` varchar(255) CHARACTER SET utf8 NOT NULL DEFAULT 'post_meta.html' after `postTemplate`";
+		$db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` ADD INDEX `idx_status` USING BTREE (`postStatus`) comment ''";
+		$db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` ADD INDEX `idx_blog` USING BTREE (`blogID`) comment ''";
+		$db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_sections` ADD COLUMN `blogID` int(10) UNSIGNED NOT NULL DEFAULT 1 after `sectionID`";
+		$db->execute($sql);
+
+		$sql = "CREATE TABLE IF NOT EXISTS `".PERCH_DB_PREFIX."blogs` (
+			`blogID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+			`blogTitle` char(255) NOT NULL DEFAULT 'Blog',
+			`blogSlug` char(255) DEFAULT 'blog',
+			`setSlug` char(255) DEFAULT 'blog',
+			`postTemplate` char(255) DEFAULT 'post.html',
+			`blogDynamicFields` mediumtext DEFAULT NULL,
+			PRIMARY KEY (`blogID`)) CHARSET=utf8";
+		$db->execute($sql);
+
+		$sql = 'SELECT COUNT(*) FROM '.PERCH_DB_PREFIX.'blogs';
+		if ($db->get_count($sql)==0) {
+			$sql = "INSERT INTO `".PERCH_DB_PREFIX."blogs` (`blogID`, `blogTitle`, `blogSlug`, `setSlug`, `postTemplate`, `blogDynamicFields`)
+					VALUES (1,'Blog','blog','blog','post.html','[]')";
+			$db->execute($sql);
+		}
+
+
+
+		// 5.6
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` ADD `postIsPublished` TINYINT(1)  NOT NULL  DEFAULT '1'  AFTER `postMetaTemplate`";
+		$db->execute($sql);		
+
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_posts` CHANGE `postIsPublished` `postIsPublished` TINYINT(1) NOT NULL DEFAULT '0'";
+		$db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_comments` ADD `webmention` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0' AFTER `commentDynamicFields`";
+		$db->execute($sql);
+
+		$sql = "ALTER TABLE `".PERCH_DB_PREFIX."blog_comments` ADD `webmentionType` ENUM('comment', 'like', 'repost') NULL DEFAULT NULL AFTER `webmention`";
+		$db->execute($sql);
+
+		$sql = "CREATE TABLE IF NOT EXISTS `".PERCH_DB_PREFIX."blog_webmention_queue` (
+			      `entryID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+			      `entryCreated` timestamp NOT NULL DEFAULT '2000-01-01 00:00:00',
+			      `entrySource` char(255) NOT NULL DEFAULT '',
+			      `entryTarget` char(255) NOT NULL DEFAULT '',
+			      `entryType` enum('post','comment') NOT NULL DEFAULT 'post',
+			      `entryFK` int(10) NOT NULL DEFAULT '0',
+			      PRIMARY KEY (`entryID`)
+			    ) ENGINE=MyISAM DEFAULT CHARSET=utf8";
+		$db->execute($sql);
+
 	}
 
 
@@ -167,5 +226,5 @@
     	$Authors = new PerchBlog_Authors($API);
     	$Authors->update_post_counts();
 
-    	$Settings->set('perch_blog_update', '5.0');
+    	$Settings->set('perch_blog_update', '5.6');
     }

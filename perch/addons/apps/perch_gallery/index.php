@@ -4,20 +4,16 @@
     
     $API  = new PerchAPI(1.0, 'perch_gallery');
     $Lang = $API->get('Lang');
+    $HTML = $API->get('HTML');
+    $Paging = $API->get('Paging');
 
-    # include your class files
-    include('PerchGallery_Albums.class.php');
-    include('PerchGallery_Album.class.php');
-    include('PerchGallery_Images.class.php');
-    include('PerchGallery_Image.class.php');
-    include('PerchGallery_ImageVersions.class.php');
-    include('PerchGallery_ImageVersion.class.php');
 
     # Set the page title
     $Perch->page_title = $Lang->get('Gallery: Manage Albums');
 
 
     # Do anything you want to do before output is started
+    include('modes/_subnav.php');
     include('modes/album.list.pre.php');
     
     
@@ -31,4 +27,3 @@
     
     # Bottom layout
     include(PERCH_CORE . '/inc/btm.php');
-?>

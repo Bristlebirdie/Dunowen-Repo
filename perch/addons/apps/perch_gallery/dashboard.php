@@ -1,12 +1,8 @@
 <?php
-	include('PerchGallery_Albums.class.php');
-	include('PerchGallery_Album.class.php');
-	include('PerchGallery_Images.class.php');
-	include('PerchGallery_Image.class.php');
-	include('PerchGallery_ImageVersions.class.php');
-	include('PerchGallery_ImageVersion.class.php');
 
+	return; 
 
+	
     $API   = new PerchAPI(1.0, 'perch_gallery');
     $Lang  = $API->get('Lang');
     $Albums = new PerchGallery_Albums($API);

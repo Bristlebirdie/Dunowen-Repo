@@ -1,6 +1,8 @@
 <?php
 	require('../../../runtime.php');
 
+	$Perch = Perch::fetch();
+
 	PerchSession::commence();
 
 	// HTTP headers for no cache etc
@@ -40,7 +42,7 @@
 
 	if ($bucket_name == '') $bucket_name = 'default';
 
-	$Perch = Perch::fetch();
+	
 
 	$bucket = $Perch->get_resource_bucket($bucket_name);
 	PerchUtil::initialise_resource_bucket($bucket);
@@ -173,5 +175,3 @@
 
 	// Return JSON-RPC response
 	die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
-
-?>

@@ -4,23 +4,21 @@
     $message = false;
     
 
-    $HTML = $API->get('HTML');
-
     if (isset($_GET['id']) && $_GET['id']!='') {
         $albumID = (int) $_GET['id'];    
         $Album = $GalleryAlbums->find($albumID);
         $details = $Album->to_array();
         
-        $heading1 = 'Editing Album Options';
-        $heading2 = 'Edit Album';
+        $heading1 = 'Editing album options';
+        $heading2 = 'Edit album';
         
     }else{
         $Album = false;
         $albumID = false;
         $details = array();
         
-        $heading1 = 'Creating a New Album';
-        $heading2 = 'Add Album';
+        $heading1 = 'Creating a new album';
+        $heading2 = 'Add album';
 
         if (!$CurrentUser->has_priv('perch_gallery.album.create')) die('Your role does not have permission to create new albums.');
     }

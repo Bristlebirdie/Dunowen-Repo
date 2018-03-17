@@ -1,8 +1,5 @@
 <?php
     
-
-    $HTML = $API->get('HTML');
-    
     $GalleryAlbums = new PerchGallery_Albums($API);
     
     $Form = $API->get('Form');
@@ -19,8 +16,8 @@
    			}
 
    			$Alert->set('success', $Lang->get('Album orders successfully updated.'));
+        PerchUtil::redirect($API->app_path());
    		}
     }
     
-    $albums = $GalleryAlbums->return_all();
-?>
+    $albums = $GalleryAlbums->all($Paging);
