@@ -14,7 +14,7 @@
 	)); 
 ?>
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="/css/style-min.css"/>
+<link rel="stylesheet" href="/css/style-min.123.css"/>
 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 </head>
