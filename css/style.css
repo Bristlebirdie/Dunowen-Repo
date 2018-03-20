@@ -1747,8 +1747,8 @@ textarea {
 		text-indent: 100%;
 		white-space: nowrap;
 		overflow: hidden;
-		background: url('../img/sidebar-logos-2017@2x.png') no-repeat left top;
-		background-size: 120px 280px;	
+		background: url('../img/sidebar-logos-2018.png') no-repeat left top;
+		background-size: 120px 163px;	
 	}
 /*	.logo.failte-ireland a {
 		width: 120px;
@@ -1759,13 +1759,18 @@ textarea {
 		width: 120px;
 		height: 43px;	
 	}
-	.logo.guides-2016 a {
+/*	.logo.guides-2016 a {
 		background-position: 0 -43px;
 		width: 120px;
 		height: 117px;	
 	}
 	.logo.guides-2017 a {
 		background-position: 0 -160px;
+		width: 120px;
+		height: 120px;	
+	}*/
+	.logo.guides-2018 a {
+		background-position: 0 -43px;
 		width: 120px;
 		height: 120px;	
 	}
@@ -1882,6 +1887,11 @@ textarea {
        	background-image: url(../img/social-circle@2x.png); 
        	background-size: 40px 240px;
        }
+	   .logo a {
+		background-image: url('../img/sidebar-logos-2018@2x.png');
+		background-size: 120px 163px;	
+	   }
+	   
 }
 
 
