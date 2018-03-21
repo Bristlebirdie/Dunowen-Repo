@@ -11,9 +11,9 @@
 img/*
 pdf/*
 f/*
-perch/config/config.live.inc.php
-perch/config/config.staging.inc.php
-perch/config/config.local.inc.php
+perch/config/config.live.php
+perch/config/config.staging.php
+perch/config/config.local.php
 perch/config/config.php
 perch/resources/*
 .sass-cache/*
