@@ -4,28 +4,20 @@
 *.DS_Store
 *.swp
 *.out
+*.crt
+*.key
 
 ## project files to ignore
 img/*
 pdf/*
 f/*
-perch/config/live.inc.php
-perch/config/staging.inc.php
-perch/config/local.inc.php
+perch/config/config.live.inc.php
+perch/config/config.staging.inc.php
+perch/config/config.local.inc.php
 perch/config/config.php
 perch/resources/*
-perch/addons/plugins/editors/redactor
-perch/addons/plugins/editors/ckeditor
-perch/addons/plugins/editors/markitup
-holding/*
 .sass-cache/*
 sass/removed/*
 dunowenhouse.ie.esproj/*
 error_log
 config.codekit
-perch/config/config.php
-node_modules/*
-Gruntfile.js
-package.json
-img/footer-logos.png
-img/footer-logos@2x.png
